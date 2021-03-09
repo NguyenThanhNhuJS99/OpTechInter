@@ -1,0 +1,1836 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'elle-futura' !important;
+    color: #333;
+    font-size: 14px !important;
+    background-color: #f5f9f0;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+#info {
+    background-color: #e3f4cf;
+    height: 30px;
+}
+
+p {
+    margin: 0
+}
+
+section {
+    padding: 30px 0px 10px 0px;
+}
+
+header {
+    position: relative;
+}
+
+/* ------------------ MENU - TOP---------------------- */
+.location,
+.contact {
+    margin: 0;
+    line-height: 30px;
+    font-size: 14px;
+    font-weight: 300 !important;
+}
+
+.location {
+    float: left;
+}
+
+.contact {
+    float: right;
+    position: relative;
+}
+
+.email-top {
+    line-height: 30px;
+    display: inline;
+}
+
+.gachdung {
+    border-right: 1px solid #ccc;
+    height: 70%;
+    display: inline;
+    margin: 0 5px;
+}
+
+.social-top {
+    display: inline;
+}
+
+.top-menu {
+    position: relative;
+    height: 80px;
+    background-image: url(http://waterclean.optechdemo.com/public/images/bg_header.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.top-menu .logo {
+    margin-top: 10px;
+}
+
+.menu {
+    line-height: 45px;
+    height: 45px;
+    background-color: #2CB45D
+}
+
+.top-menu .boxZalo,
+.top-menu .boxHotline {
+    background-size: 45px 45px;
+    background-position: left 4px;
+    background-repeat: no-repeat;
+    padding: 0px 0px 0px 50px;
+    float: right;
+    margin: 10px 20px 0px 0px;
+    position: relative;
+    height: 80px;
+}
+
+.top-menu .boxHotline {
+    line-height: 25px;
+    background-image: url(http://waterclean.optechdemo.com/public/images/icon/ic_hotline.png);
+}
+
+.top-menu .boxZalo {
+    background-image: url(http://waterclean.optechdemo.com/public/images/icon/ic_zalo.png);
+}
+
+.boxZalo a {
+    color: #0068FF;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.boxHotline a {
+    color: #FE0000;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.t-center {
+    text-align: center;
+}
+
+.top-menu form {
+    position: relative;
+    margin-top: 5px;
+}
+
+.timkiem {
+    width: 100%;
+    height: 30px;
+    border: none;
+    outline: none;
+    padding: 0px 0px 0px 10px;
+    border-radius: 5px;
+}
+
+.top-menu button {
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    width: 28px;
+    height: 28px;
+    border: none;
+    background-image: url(http://waterclean.optechdemo.com/public/images/icon/ic_search.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90% 90%;
+    background-color: transparent;
+}
+
+/* ------------------ END MENU-TOP ---------------------- */
+
+
+/*------------------------------NAV MENU------------------------------*/
+header ul li a {
+    color: #FFF !important
+}
+
+nav {
+    min-height: 45px;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    float: left;
+    position: relative;
+    min-height: 45px;
+    font-size: 14px;
+    padding: 0px
+}
+
+header nav ul li a {
+    color: #FFF;
+    padding: 0px 0px 0px 50px;
+    line-height: 45px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+nav>ul>li>a::before {
+    content: '';
+    left: 24px;
+    position: absolute;
+    top: 20%;
+    width: 1px;
+    background-color: #52cb7e;
+    height: 60%;
+}
+
+.home img {
+    margin-top: 5px;
+    width: 35px;
+    height: 35px;
+    float: left;
+}
+
+nav ul li ul {
+    visibility: hidden;
+    position: absolute;
+    top: 45px;
+    left: 0px;
+    width: 300px;
+    background-color: #2CB45D;
+    padding: 0px 0px;
+    z-index: 999;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+}
+
+nav ul ul li {
+    float: none;
+    padding-left: 20px;
+    margin: 0;
+}
+
+nav ul ul li a {
+    color: #fff;
+    text-transform: none;
+    font-weight: normal;
+    line-height: 35px;
+}
+
+nav ul li ul li {
+    border-bottom: 1px solid #3ccb6f;
+    width: 100%;
+}
+
+header ul li:hover>ul {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+header nav ul li:hover>a {
+    color: #0068FF !important;
+}
+
+nav ul li ul li ul {
+    visibility: hidden;
+    position: absolute;
+    top: 5px;
+    left: 300px;
+    width: 320px;
+    background-color: #2CB45D;
+    padding: 0px 0px;
+    z-index: 999;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+}
+
+nav ul li ul li ul li {
+    float: none;
+    padding-left: 20px;
+    margin: 0;
+}
+
+nav ul li ul li ul li a {
+    color: #fff;
+    text-transform: none;
+    font-weight: normal;
+    line-height: 35px;
+}
+
+nav ul li ul li ul li {
+    border-bottom: 1px solid #3ccb6f;
+    width: 100%;
+}
+
+nav ul li ul li:hover>ul {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+/*------------------------------END NAV MENU------------------------------*/
+
+/*-------------------------------- BANNER --------------------------------*/
+#banner .owl-dots {
+    bottom: 0px;
+    position: absolute;
+    left: 46%;
+}
+
+.owl-theme .owl-dots .owl-dot {
+    outline: none;
+}
+
+#banner .owl-dots .owl-dot {
+    outline: none;
+}
+
+#banner .owl-dot:hover>span,
+#banner .owl-dot:active>span {
+    background-color: #ffffff !important;
+}
+
+#banner .item {
+    position: relative;
+}
+
+#banner .item .tag-uytin {
+    width: 110px;
+    opacity: 0;
+    height: 110px;
+    left: 520px;
+    bottom: 135px;
+    position: absolute;
+    transition: all 1s;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: dh-ring 5s ease-in-out;
+}
+
+#banner .item .text-qc1 {
+    background-color: yellow;
+    color: #0068FF;
+    padding: 5px 20px;
+    border-radius: 5px;
+    position: absolute;
+    transition: all 1s;
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    font-size: 30px;
+    animation: dh-move-1 5s;
+}
+
+#banner .item .text-qc2 {
+    background-color: rgb(255, 17, 0);
+    color: #ffffff;
+    padding: 5px 20px;
+    border-radius: 5px;
+    position: absolute;
+    transition: all 1s;
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    font-size: 30px;
+    animation: dh-move-2 5s;
+}
+
+/*-------------------------------- END BANNER -----------------------------*/
+
+/* --------------------------------GIỚI THIỆU----------------------------- */
+.title {
+    background: linear-gradient(to right, rgba(2, 155, 12, 1) 0%, rgba(2, 155, 12, 1) 14%, rgba(2, 155, 12, 1) 29%, rgba(2, 155, 12, 1) 52%, rgba(245, 249, 240, 1) 100%);
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 40px;
+    position: relative;
+    color: #FFF;
+    border-left: 3px solid #2CB45D;
+    padding: 0px 0px 0px 10px;
+    margin: 0px 0px 15px;
+}
+
+#gioithieu p {
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+/* ------------------------------END GIỚI THIỆU-------------------------- */
+
+/* -------------------------------DỊCH VỤ--------------------------------*/
+#dichvu {
+    background-color: #ffffff;
+}
+
+.title-ct {
+    background: linear-gradient(to right, rgba(245, 249, 240, 1) 0%, rgba(2, 155, 12, 1) 17%, rgba(2, 155, 12, 1) 24.5%, rgba(2, 155, 12, 1) 50%, rgba(2, 155, 12, 1) 75.5%, rgba(2, 155, 12, 1) 83%, rgba(245, 249, 240, 1) 100%);
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 40px;
+    position: relative;
+    color: #FFF;
+    width: 60%;
+    margin: 0px auto 20px;
+    text-align: center;
+}
+
+.img-service {
+    height: 230px;
+    margin: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.background-img-service {
+    height: 230px;
+    width: 350px;
+    opacity: 0.8;
+    background-color: rgb(233, 233, 233);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    display: none;
+}
+
+.background-img-service p {
+    font-size: 20px;
+    font-weight: 900;
+    color: #005589;
+    opacity: 1;
+    line-height: 230px;
+}
+
+#dichvu .service a .img-service:hover>.background-img-service {
+    display: block;
+}
+
+.service {
+    overflow: hidden
+}
+
+.service h3 {
+    font-weight: 600;
+    font-size: 15px;
+    margin: 10px 0px 10px;
+    color: #333;
+    text-align: center;
+}
+
+/* -------------------------------END DỊCH VỤ--------------------------------*/
+
+/* --------------------------- HỆ THỐNG XỬ LÝ ------------------------------ */
+.title-hethong {
+    padding: 9px 25px;
+    color: #2CB45D;
+    text-transform: uppercase;
+    font-size: 18px;
+    position: relative;
+    text-align: center;
+    font-weight: 900;
+    border-bottom: 2px solid #2CB45D;
+    margin: 0px;
+}
+
+.mini-menu {
+    background-color: #dff3c7;
+    margin: 0px 0px 20px;
+    height: 40px;
+}
+
+.mini-menu ul li:hover>a {
+    color: steelblue;
+}
+
+.mini-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.mini-menu ul li {
+    float: left;
+    position: relative;
+    min-height: 45px;
+    font-size: 14px;
+    padding: 0px
+}
+
+.mini-menu ul li a {
+    color: #333;
+    padding: 0px 10px;
+    line-height: 40px;
+    border-right: 1px solid #ddd;
+}
+
+.mini-menu ul li:last-child a {
+    border-right: none;
+}
+
+.item-service {
+    margin: 0px 0px 20px;
+    background-color: #FFF;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.item-service:hover {
+    background-color: rgba(255, 255, 41, 0.897);
+    transform: scale(1.05);
+    box-shadow: 1px 4px 4px 1px grey;
+}
+
+.item-service:hover>.img-item {
+    transform: scale(3);
+}
+
+.img-item {
+    height: 210px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: none;
+}
+
+#hethongxuly h3,
+#vattu-thietbi h3 {
+    font-weight: 500;
+    font-size: 15px;
+    margin: 5px 0px;
+    text-align: center;
+    line-height: 20px;
+    padding: 8px 0px;
+    margin: 0px;
+    color: #333;
+}
+
+.price {
+    line-height: 32px;
+}
+
+.price span {
+    color: #F00;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.btn-detail {
+    float: right;
+    background-color: #2CB45D;
+    padding: 4px 15px 4px 25px;
+    border-radius: 3px;
+    background-image: url(http://waterclean.optechdemo.com/public/images/icon/ic_arrow_2.png);
+    background-size: 15px 15px;
+    background-position: 5px 6px;
+    background-repeat: no-repeat;
+    border: 1.5px solid #11893c;
+    color: white !important;
+}
+
+/* ------------------------END HỆ THỐNG XỬ LÝ ------------------------------ */
+
+/*--------------------------------Ý KIẾN KHÁCH HÀNG------------------------*/
+#ykienkhachhang {
+    padding: 40px 0px !important;
+    background-image: url(http://waterclean.optechdemo.com/public/images/bg-03.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.title-kh {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 18px;
+    height: 80px;
+    position: relative;
+    text-align: center;
+    padding: 0px 10px;
+    color: #2CB45D;
+    text-shadow: 1px 0 0 #ddd, -1px 0 0 #ddd, 0 1px 0 #ddd, 0 -1px 0 #ddd, 1px 1px #ddd, -1px -1px 0 #ddd, 1px -1px 0 #ddd, -1px 1px 0 #ddd;
+}
+
+.message {
+    padding: 15px;
+    background-color: #2CB45D;
+    border-radius: 10px;
+    color: #FFF;
+    margin: 0px auto 10px;
+    position: relative;
+    width: 90%;
+}
+
+.tenkh {
+    font-weight: 600;
+    margin: 0px 0px 10px;
+    text-align: center;
+}
+
+.message::before {
+    border: 20px solid transparent;
+    border-top-color: rgb(44, 180, 93);
+    margin-top: -9px;
+    bottom: -40px;
+    left: 44%;
+    content: " ";
+    height: 0px;
+    width: 0px;
+    position: absolute;
+}
+
+.checked {
+    color: yellow;
+}
+
+.img-kh {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    margin: 30px auto 0px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*-----------------------END Ý KIẾN KHÁCH HÀNG------------------------*/
+
+/* ----------------------TIN TỨC VÀ SỰ KIỆN ------------------*/
+.tintuc-sukien {
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+.tintuc-sukien:hover {
+    background-color: rgba(255, 255, 41, 0.897);
+    border: 1px solid rgb(224, 224, 224);
+    box-shadow: 1px 4px 4px 1px grey;
+}
+
+.list-tintuc {
+    padding-left: 15px;
+}
+
+.img-sukien {
+    width: 100%;
+    overflow: hidden;
+    height: 270px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tintuc-sukien h4 {
+    margin: 10px 0px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: black;
+    font-size: 15px
+}
+
+.date {
+    margin: 0px 0px 5px;
+    font-style: italic;
+    font-size: 13px;
+    color: #aaaeaf;
+}
+
+.item-sukien,
+.item-tuvan {
+    background-color: #FFF;
+    padding: 10px 10px;
+    border-bottom: 1px solid #ddd;
+    margin: 10px 0px;
+}
+
+#listtintuc .item-sukien:hover,
+.item-tuvan:hover {
+    background-color: rgba(255, 255, 41, 0.897);
+    border: 1px solid rgb(224, 224, 224);
+    transform: scale(1.02);
+    box-shadow: 1px 4px 4px 1px grey;
+}
+
+.item-sukien h4,
+.item-tuvan h4 {
+    font-weight: 600;
+    font-size: 15px;
+    margin: 0px 0px 5px;
+    color: black;
+}
+
+.img-sukien-sm,
+.img-tuvan,
+.khachhang {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img-sukien-sm {
+    height: 55px;
+    width: 80px;
+}
+
+.img-tuvan {
+    height: 100px;
+    width: 130px;
+}
+
+.khachhang {
+    height: 130px;
+    margin: auto;
+}
+
+/* -----------------END TIN TỨC VÀ SỰ KIỆN ------------------*/
+
+/*  ------------------------ FOOTER ----------------------- */
+footer {
+    background-image: url(http://waterclean.optechdemo.com/public/images/bg_footer.jpg);
+    background-position: left bottom;
+    background-repeat: repeat-x;
+    background-size: 22% auto;
+    padding: 25px 0px 0px;
+    position: relative;
+}
+
+footer::after {
+    background: #dff3c7;
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+}
+
+.footer {
+    padding: 20px 0px 20px;
+    color: #333;
+    position: relative;
+    z-index: 10;
+}
+
+.title-cty {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 18px;
+    height: auto;
+    margin-bottom: 20px;
+    position: relative;
+    padding: 0px;
+    color: #2CB45D;
+    text-shadow: 1px 0 0 #ddd, -1px 0 0 #ddd, 0 1px 0 #ddd, 0 -1px 0 #ddd, 1px 1px #ddd, -1px -1px 0 #ddd, 1px -1px 0 #ddd, -1px 1px 0 #ddd;
+}
+
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li {
+    line-height: 30px;
+    visibility: auto;
+}
+
+footer .title-nd {
+    text-transform: uppercase;
+    font-size: 16px;
+    margin: 0px 0px 15px;
+}
+
+.hotro li a {
+    line-height: 30px;
+    color: #333;
+    background-image: url(http://waterclean.optechdemo.com/public/images/icon/ic_arrow.png);
+    background-size: 15px 15px;
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding: 0px 0px 0px 16px;
+    transition: all 0.2s ease-in-out;
+}
+
+.hotro li a:hover {
+    margin-left: 8px;
+    color: red;
+}
+
+.copyright {
+    line-height: 40px;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+    border-top: 1px solid #ddd;
+}
+
+/*  ---------------------END FOOTER ------------------- */
+
+/* ------------------ DROP MENU ------------------*/
+body>nav {
+    display: none;
+}
+
+.dropmenu {
+    width: 50vh;
+    height: 100vh;
+    background-color: blanchedalmond;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.top-dropmenu a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #FFF !important;
+    font-size: 16px;
+}
+
+.mn-item a {
+    color: black !important;
+    font-size: 16px;
+}
+
+.top-dropmenu {
+    background: #029b0c;
+    text-align: center;
+    height: 38px;
+    line-height: 38px;
+}
+
+#menudrop ul li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    line-height: 38px;
+    border-bottom: 1px solid black;
+}
+
+.mn-list {
+    padding-left: 15px;
+}
+
+/* -------------------------MMENU--------------------------- */
+.mm-navbar {
+    background-color: #029b0c;
+}
+
+.mm-navbar a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #FFF !important;
+    font-size: 16px;
+}
+
+.mm-listview {
+    height: 40px;
+}
+
+.menumobi {
+    background: #029b0c;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 99;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    display: none;
+}
+
+.icon-menu {
+    position: absolute;
+    /* line-height: 80px; */
+    left: 6px;
+    top: -4px;
+    font-size: 30px;
+    color: white !important;
+}
+
+/* -------------------------- SCROLL TOP ---------------------- */
+.back-to-top {
+    position: fixed;
+    bottom: 110px;
+    /* right: -90px; */
+    z-index: 999999;
+    transition: all .5s ease-out;
+}
+
+.back-to-top.display {
+    border: 1px solid #ccc;
+    right: 120px;
+}
+
+.back-to-top a {
+    display: block;
+    z-index: 999;
+    font-size: 13px;
+    padding: 18px 0 6px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 55px;
+    position: relative;
+    background: #2CB45D;
+    font-weight: bold;
+    border: 1px solid #FFF;
+    transition: all .5s ease-out;
+    color: #ddd;
+}
+
+.back-to-top a:before {
+    width: 12px;
+    height: 9px;
+    content: "^";
+    margin-left: -6px;
+    margin-top: -10px;
+    position: absolute;
+    display: inline-block;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    top: 35%;
+    left: 50%;
+}
+
+/* -------------------------- END SCROLL TOP ---------------------- */
+.mainContain {
+    position: relative;
+}
+
+/* RING PHONE */
+.boxPhone {
+    position: relative;
+}
+
+.phone-ring {
+    display: block;
+    position: fixed;
+    bottom: -50px;
+    right: 10px;
+    z-index: 999999;
+}
+
+.phonering-alo-phone.phonering-alo-static {
+    opacity: .6
+}
+
+.phonering-alo-phone.phonering-alo-hover,
+.phonering-alo-phone:hover {
+    opacity: 1
+}
+
+.phonering-alo-ph-circle {
+    width: 160px;
+    height: 160px;
+    right: -20px;
+    bottom: 20px;
+    position: absolute;
+    background-color: transparent;
+    border-radius: 100% !important;
+    border: 2px solid rgba(30, 30, 30, 0.4);
+    border: 2px solid #bfebfc 9;
+    opacity: .1;
+    -webkit-animation: phonering-alo-circle-anim 1.2s infinite ease-in-out;
+    animation: phonering-alo-circle-anim 1.2s infinite ease-in-out;
+    transition: all .5s;
+    -webkit-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%
+}
+
+.phonering-alo-phone.phonering-alo-active .phonering-alo-ph-circle {
+    -webkit-animation: phonering-alo-circle-anim 1.1s infinite ease-in-out !important;
+    animation: phonering-alo-circle-anim 1.1s infinite ease-in-out !important
+}
+
+.phonering-alo-phone.phonering-alo-static .phonering-alo-ph-circle {
+    -webkit-animation: phonering-alo-circle-anim 2.2s infinite ease-in-out !important;
+    animation: phonering-alo-circle-anim 2.2s infinite ease-in-out !important
+}
+
+.phonering-alo-phone.phonering-alo-hover .phonering-alo-ph-circle,
+.phonering-alo-phone:hover .phonering-alo-ph-circle {
+    border-color: #00aff2;
+    opacity: .5
+}
+
+.phonering-alo-phone.phonering-alo-green.phonering-alo-hover .phonering-alo-ph-circle,
+.phonering-alo-phone.phonering-alo-green:hover .phonering-alo-ph-circle {
+    border-color: #F20000;
+    opacity: .5
+}
+
+.phonering-alo-phone.phonering-alo-green .phonering-alo-ph-circle {
+    border-color: #F20000;
+    opacity: .5
+}
+
+.phonering-alo-phone.phonering-alo-gray.phonering-alo-hover .phonering-alo-ph-circle,
+.phonering-alo-phone.phonering-alo-gray:hover .phonering-alo-ph-circle {
+    border-color: #ccc;
+    opacity: .5
+}
+
+.phonering-alo-phone.phonering-alo-gray .phonering-alo-ph-circle {
+    border-color: #75eb50;
+    opacity: .5
+}
+
+.phonering-alo-ph-circle-fill {
+    width: 100px;
+    height: 100px;
+    bottom: 50px;
+    right: 10px;
+    position: absolute;
+    background-color: #000;
+    border-radius: 100% !important;
+    border: 2px solid transparent;
+    -webkit-animation: phonering-alo-circle-fill-anim 2.3s infinite ease-in-out;
+    animation: phonering-alo-circle-fill-anim 2.3s infinite ease-in-out;
+    transition: all .5s;
+    -webkit-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%
+}
+
+.phonering-alo-phone.phonering-alo-active .phonering-alo-ph-circle-fill {
+    -webkit-animation: phonering-alo-circle-fill-anim 1.7s infinite ease-in-out !important;
+    animation: phonering-alo-circle-fill-anim 1.7s infinite ease-in-out !important
+}
+
+.phonering-alo-phone.phonering-alo-static .phonering-alo-ph-circle-fill {
+    -webkit-animation: phonering-alo-circle-fill-anim 2.3s infinite ease-in-out !important;
+    animation: phonering-alo-circle-fill-anim 2.3s infinite ease-in-out !important;
+    opacity: 0 !important
+}
+
+.phonering-alo-phone.phonering-alo-hover .phonering-alo-ph-circle-fill,
+.phonering-alo-phone:hover .phonering-alo-ph-circle-fill {
+    background-color: rgba(0, 175, 242, 0.5);
+    background-color: #00aff2 9;
+    opacity: .75 !important
+}
+
+.phonering-alo-phone.phonering-alo-green.phonering-alo-hover .phonering-alo-ph-circle-fill,
+.phonering-alo-phone.phonering-alo-green:hover .phonering-alo-ph-circle-fill {
+    background-color: rgba(242, 223, 0, 0.85);
+    background-color: #baf5a7 9;
+    opacity: .75 !important
+}
+
+.phonering-alo-phone.phonering-alo-green .phonering-alo-ph-circle-fill {
+    background-color: rgba(242, 223, 0, 0.85);
+    background-color: #a6e3fa 9
+}
+
+.phonering-alo-phone.phonering-alo-gray.phonering-alo-hover .phonering-alo-ph-circle-fill,
+.phonering-alo-phone.phonering-alo-gray:hover .phonering-alo-ph-circle-fill {
+    background-color: rgba(204, 204, 204, 0.5);
+    background-color: #ccc 9;
+    opacity: .75 !important
+}
+
+.phonering-alo-phone.phonering-alo-gray .phonering-alo-ph-circle-fill {
+    background-color: rgba(117, 235, 80, 0.5);
+    opacity: .75 !important
+}
+
+.phonering-alo-ph-img-circle {
+    z-index: 10;
+    width: 60px;
+    height: 60px;
+    bottom: 70px;
+    right: 30px;
+    position: absolute;
+    background: rgba(30, 30, 30, 0.1) url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABNmlDQ1BQaG90b3Nob3AgSUNDIHByb2ZpbGUAAHjarY6xSsNQFEDPi6LiUCsEcXB4kygotupgxqQtRRCs1SHJ1qShSmkSXl7VfoSjWwcXd7/AyVFwUPwC/0Bx6uAQIYODCJ7p3MPlcsGo2HWnYZRhEGvVbjrS9Xw5+8QMUwDQCbPUbrUOAOIkjvjB5ysC4HnTrjsN/sZ8mCoNTIDtbpSFICpA/0KnGsQYMIN+qkHcAaY6addAPAClXu4vQCnI/Q0oKdfzQXwAZs/1fDDmADPIfQUwdXSpAWpJOlJnvVMtq5ZlSbubBJE8HmU6GmRyPw4TlSaqo6MukP8HwGK+2G46cq1qWXvr/DOu58vc3o8QgFh6LFpBOFTn3yqMnd/n4sZ4GQ5vYXpStN0ruNmAheuirVahvAX34y/Axk/96FpPYgAAACBjSFJNAAB6JQAAgIMAAPn/AACA6AAAUggAARVYAAA6lwAAF2/XWh+QAAAB/ElEQVR42uya7W3CMBCG31QM4A1aNggTlG6QbpBMkHYC1AloJ4BOABuEDcgGtBOETnD9c1ERCH/lwxeaV8oPFGP86Hy+DxMREW5Bd7gRjSDSNGn4/RiAOvm8C0ZCRD5PSkQVXSr1nK/xE3mcWimA1ZV3JYBZCIO4giQANoYxMwYS6+xKY4lT5dJPreWZY+uspqSCKPYN27GJVBDXheVSQe494ksiEWTuMXcu1dld9SARxDX1OAJ4lgjy4zDnFsC076A4adEiRwAZg4hOUSpNoCsBPDGM+HqkNGynYBCuILuWj+dgWysGsNe8nwL4GsrW0m2fxZBq9rW0rNcX5MOQ9eZD8JFahcG5g/iKT671alGAYQggpYWvpEPYWrU/HDTOfeRIX0q2SL3QN4tGhZJukVobQyXYWw7WtLDKDIuM+ZSzscyCE9PCy5IttCvnZNaeiGLNHKuz8ZVh/MXTVu/1xQKmIqLEAuJ0fNo3iG5B51oSkeKnsBi/4bG9gYB/lCytU5G9DryFW+3Gm+JLwU7ehbJrwTjq4DJU8bHcVbEV9dXXqqP6uqO5e2/QZRYJpqu2IUAA4B3tXvx8hgKp05QZW6dJqrLTNkB6vrRURLRwPHqtYgkC3cLWQAcDQGGKH13FER/NATzi786+BPDNjm1dMkfjn2pGkBHkf4D8DgBJDuDHx9BN+gAAAABJRU5ErkJggg==) no-repeat center center;
+    border-radius: 100% !important;
+    border: 2px solid transparent;
+    -webkit-animation: phonering-alo-circle-img-anim 1s infinite ease-in-out;
+    animation: phonering-alo-circle-img-anim 1s infinite ease-in-out;
+    -webkit-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%
+}
+
+.phonering-alo-ph-img-circle-text {
+    position: absolute;
+    bottom: 75px;
+    right: 45px;
+    width: 250px;
+    background-color: #c00;
+    height: 50px;
+    border-radius: 50px;
+    line-height: 50px;
+    padding: 0px 15px;
+    color: #fff;
+    z-index: 9;
+    font-size: 16px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.phonering-alo-phone.phonering-alo-active .phonering-alo-ph-img-circle {
+    -webkit-animation: phonering-alo-circle-img-anim 1s infinite ease-in-out !important;
+    animation: phonering-alo-circle-img-anim 1s infinite ease-in-out !important
+}
+
+.phonering-alo-phone.phonering-alo-static .phonering-alo-ph-img-circle {
+    -webkit-animation: phonering-alo-circle-img-anim 0 infinite ease-in-out !important;
+    animation: phonering-alo-circle-img-anim 0 infinite ease-in-out !important
+}
+
+.phonering-alo-phone.phonering-alo-hover .phonering-alo-ph-img-circle,
+.phonering-alo-phone:hover .phonering-alo-ph-img-circle {
+    background-color: #00aff2
+}
+
+/* .phonering-alo-phone.phonering-alo-green.phonering-alo-hover .phonering-alo-ph-img-circle,.phonering-alo-phone.phonering-alo-green:hover .phonering-alo-ph-img-circle {
+    background-color:#75eb50;
+} */
+
+.phonering-alo-phone.phonering-alo-green .phonering-alo-ph-img-circle {
+    background-color: #005589
+}
+
+.phonering-alo-phone.phonering-alo-gray.phonering-alo-hover .phonering-alo-ph-img-circle,
+.phonering-alo-phone.phonering-alo-gray:hover .phonering-alo-ph-img-circle {
+    background-color: #ccc
+}
+
+.phonering-alo-phone.phonering-alo-gray .phonering-alo-ph-img-circle {
+    background-color: #75eb50
+}
+
+@-webkit-keyframes phonering-alo-circle-anim {
+    0% {
+        -webkit-transform: rotate(0) scale(.5) skew(1deg);
+        -webkit-opacity: .1
+    }
+
+    30% {
+        -webkit-transform: rotate(0) scale(.7) skew(1deg);
+        -webkit-opacity: .5
+    }
+
+    100% {
+        -webkit-transform: rotate(0) scale(1) skew(1deg);
+        -webkit-opacity: .1
+    }
+}
+
+@-webkit-keyframes phonering-alo-circle-fill-anim {
+    0% {
+        -webkit-transform: rotate(0) scale(.7) skew(1deg);
+        opacity: .2
+    }
+
+    50% {
+        -webkit-transform: rotate(0) scale(1) skew(1deg);
+        opacity: .2
+    }
+
+    100% {
+        -webkit-transform: rotate(0) scale(.7) skew(1deg);
+        opacity: .2
+    }
+}
+
+@-webkit-keyframes phonering-alo-circle-img-anim {
+    0% {
+        -webkit-transform: rotate(0) scale(1) skew(1deg)
+    }
+
+    10% {
+        -webkit-transform: rotate(-25deg) scale(1) skew(1deg)
+    }
+
+    20% {
+        -webkit-transform: rotate(25deg) scale(1) skew(1deg)
+    }
+
+    30% {
+        -webkit-transform: rotate(-25deg) scale(1) skew(1deg)
+    }
+
+    40% {
+        -webkit-transform: rotate(25deg) scale(1) skew(1deg)
+    }
+
+    50% {
+        -webkit-transform: rotate(0) scale(1) skew(1deg)
+    }
+
+    100% {
+        -webkit-transform: rotate(0) scale(1) skew(1deg)
+    }
+}
+
+@-webkit-keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(100%, 0, 0);
+        -ms-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0)
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(100%, 0, 0);
+        -ms-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0)
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none
+    }
+}
+
+@-webkit-keyframes fadeOutRight {
+    0% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: 0;
+        -webkit-transform: translate3d(100%, 0, 0);
+        -ms-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0)
+    }
+}
+
+@keyframes fadeOutRight {
+    0% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: 0;
+        -webkit-transform: translate3d(100%, 0, 0);
+        -ms-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0)
+    }
+}
+
+@-webkit-keyframes phonering-alo-circle-anim {
+    0% {
+        -webkit-transform: rotate(0) scale(.5) skew(1deg);
+        transform: rotate(0) scale(.5) skew(1deg);
+        opacity: .1
+    }
+
+    30% {
+        -webkit-transform: rotate(0) scale(.7) skew(1deg);
+        transform: rotate(0) scale(.7) skew(1deg);
+        opacity: .5
+    }
+
+    100% {
+        -webkit-transform: rotate(0) scale(1) skew(1deg);
+        transform: rotate(0) scale(1) skew(1deg);
+        opacity: .1
+    }
+}
+
+@keyframes phonering-alo-circle-anim {
+    0% {
+        -webkit-transform: rotate(0) scale(.5) skew(1deg);
+        transform: rotate(0) scale(.5) skew(1deg);
+        opacity: .1
+    }
+
+    30% {
+        -webkit-transform: rotate(0) scale(.7) skew(1deg);
+        transform: rotate(0) scale(.7) skew(1deg);
+        opacity: .5
+    }
+
+    100% {
+        -webkit-transform: rotate(0) scale(1) skew(1deg);
+        transform: rotate(0) scale(1) skew(1deg);
+        opacity: .1
+    }
+}
+
+@-webkit-keyframes phonering-alo-circle-fill-anim {
+    0% {
+        -webkit-transform: rotate(0) scale(.7) skew(1deg);
+        transform: rotate(0) scale(.7) skew(1deg);
+        opacity: .2
+    }
+
+    50% {
+        -webkit-transform: rotate(0) scale(1) skew(1deg);
+        transform: rotate(0) scale(1) skew(1deg);
+        opacity: .2
+    }
+
+    100% {
+        -webkit-transform: rotate(0) scale(.7) skew(1deg);
+        transform: rotate(0) scale(.7) skew(1deg);
+        opacity: .2
+    }
+}
+
+@keyframes phonering-alo-circle-fill-anim {
+    0% {
+        -webkit-transform: rotate(0) scale(.7) skew(1deg);
+        transform: rotate(0) scale(.7) skew(1deg);
+        opacity: .2
+    }
+
+    50% {
+        -webkit-transform: rotate(0) scale(1) skew(1deg);
+        transform: rotate(0) scale(1) skew(1deg);
+        opacity: .2
+    }
+
+    100% {
+        -webkit-transform: rotate(0) scale(.7) skew(1deg);
+        transform: rotate(0) scale(.7) skew(1deg);
+        opacity: .2
+    }
+}
+
+@-webkit-keyframes phonering-alo-circle-img-anim {
+    0% {
+        -webkit-transform: rotate(0) scale(1) skew(1deg);
+        transform: rotate(0) scale(1) skew(1deg)
+    }
+
+    10% {
+        -webkit-transform: rotate(-25deg) scale(1) skew(1deg);
+        transform: rotate(-25deg) scale(1) skew(1deg)
+    }
+
+    20% {
+        -webkit-transform: rotate(25deg) scale(1) skew(1deg);
+        transform: rotate(25deg) scale(1) skew(1deg)
+    }
+
+    30% {
+        -webkit-transform: rotate(-25deg) scale(1) skew(1deg);
+        transform: rotate(-25deg) scale(1) skew(1deg)
+    }
+
+    40% {
+        -webkit-transform: rotate(25deg) scale(1) skew(1deg);
+        transform: rotate(25deg) scale(1) skew(1deg)
+    }
+
+    50% {
+        -webkit-transform: rotate(0) scale(1) skew(1deg);
+        transform: rotate(0) scale(1) skew(1deg)
+    }
+
+    100% {
+        -webkit-transform: rotate(0) scale(1) skew(1deg);
+        transform: rotate(0) scale(1) skew(1deg)
+    }
+}
+
+@keyframes phonering-alo-circle-img-anim {
+    0% {
+        -webkit-transform: rotate(0) scale(1) skew(1deg);
+        transform: rotate(0) scale(1) skew(1deg)
+    }
+
+    10% {
+        -webkit-transform: rotate(-25deg) scale(1) skew(1deg);
+        transform: rotate(-25deg) scale(1) skew(1deg)
+    }
+
+    20% {
+        -webkit-transform: rotate(25deg) scale(1) skew(1deg);
+        transform: rotate(25deg) scale(1) skew(1deg)
+    }
+
+    30% {
+        -webkit-transform: rotate(-25deg) scale(1) skew(1deg);
+        transform: rotate(-25deg) scale(1) skew(1deg)
+    }
+
+    40% {
+        -webkit-transform: rotate(25deg) scale(1) skew(1deg);
+        transform: rotate(25deg) scale(1) skew(1deg)
+    }
+
+    50% {
+        -webkit-transform: rotate(0) scale(1) skew(1deg);
+        transform: rotate(0) scale(1) skew(1deg)
+    }
+
+    100% {
+        -webkit-transform: rotate(0) scale(1) skew(1deg);
+        transform: rotate(0) scale(1) skew(1deg)
+    }
+}
+
+/* END RING PHONE */
+
+
+/* ------------------------- MOBI CONTACT ------------------------- */
+.mobiContact {
+    display: none;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    background: linear-gradient(to right, #FFF, #FFF);
+    z-index: 9999999;
+
+}
+
+.imgContact {
+    height: 22px;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: table;
+    margin: 10px auto 0px;
+}
+
+.mobiContact .phone {
+    width: 23px;
+}
+
+.mobiContact .sms {
+    width: 27px;
+
+}
+
+.mobiContact .zalo {
+    width: 61px;
+}
+
+.mobiContact .fb {
+    width: 26px;
+}
+
+.mobiContact a {
+    color: #333;
+}
+
+/* -------------------------END MOBI CONTACT ------------------------- */
+
+/* ----------------------------MEDIA SCREEN---------------------------- */
+@media screen and (max-width: 1366px) {
+    .phone-ring {
+        display: block;
+    }
+
+    .img-sukien-sm {
+        height: 60px;
+        width: 120px;
+    }
+
+    .menumobi {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .phone-ring {
+        display: block;
+    }
+
+    .menumobi {
+        display: none;
+    }
+
+    #hethongxuly .mini-menu {
+        height: 80px;
+    }
+
+    .img-sukien-sm {
+        width: auto;
+        height: 55px;
+        width: 105px;
+    }
+
+    .img-tuvan {
+        height: 110px;
+        width: 105px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .animation-pc {
+        display: none;
+    }
+
+    .back-to-top.display {
+        right: 30px;
+    }
+
+    .phone-ring {
+        display: none;
+    }
+
+    .item-sukien h4,
+    .item-tuvan h4 {
+        padding-top: 10px;
+    }
+
+    .menumobi {
+        display: block;
+    }
+
+    #info,
+    .box-contact,
+    .box-timkiem,
+    .menu {
+        display: none;
+    }
+
+    .top-menu .col-md-4 {
+        margin-left: calc(50vw - 125px);
+        padding: 0px;
+    }
+
+    .box-logo {
+        margin: 0;
+        text-align: center;
+        float: left;
+    }
+
+    .mini-menu {
+        height: 80px;
+    }
+
+    .img-service {
+        height: 200px;
+    }
+    .img-sukien{
+        height: 126px;
+    }
+    .img-sukien-sm {
+        height: 75px;
+    }
+
+    .img-tuvan {
+        height: 160px;
+        width: 100%;
+    }
+
+    .mobiContact,
+    .responsive,
+    .icon-menu {
+        display: block;
+    }
+
+    .dropmenu {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    .animation-pc {
+        display: none;
+    }
+    .img-sukien{
+        height: 130px;
+    }
+    .img-sukien-sm{
+        height: 120px;
+        width: 100%;
+    }
+    .img-tuvan{
+        height: 180px;
+    }
+    .btn-detail{
+        padding: 4px 10px 4px 25px;
+    }
+    .img-item{
+        height: 150px;
+    }
+    .item-service a h3{
+        height: 50px;
+        margin-bottom:10px ;
+    }
+    .box-logo {
+        margin: 0px 0px 0px -40px;
+    }
+
+    .mini-menu {
+        display: none;
+    }
+
+    .title-hethong {
+        margin-bottom: 20px;
+    }
+    .logo {
+        margin-left: 60px;
+    }
+    .price{
+        text-align: center;
+    }
+    .btn-ct {
+        margin-left: -25%;
+    }
+}
+
+@media screen and (max-width: 667px) {
+    .phone-ring {
+        display: none;
+    }
+
+    .back-to-top.display {
+        right: 30px;
+    }
+
+    .img-sukien-sm {
+        height: 160px;
+        width: auto;
+    }
+
+    .item-sukien h4,
+    .item-tuvan h4 {
+        margin: 5px 0;
+        padding-top: 10px;
+    }
+
+    .list-tintuc {
+        overflow: hidden;
+    }
+
+    .logo {
+        width: auto;
+        margin-left: 0;
+    }
+
+    .mobiContact {
+        display: block;
+    }
+
+    .img-service {
+        height: 200px;
+    }
+
+    .box-logo {
+        margin: 0;
+        text-align: center;
+        float: left;
+    }
+    .price{
+        text-align: center;
+    }
+    .btn-ct{
+        margin-left: -19%;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .phone-ring {
+        display: none;
+    }
+
+    .box-logo {
+        margin: 0;
+        text-align: center;
+        float: left;
+    }
+
+    .back-to-top.display {
+        right: 30px;
+    }
+
+    .logo {
+        width: auto;
+        margin-left: 20px;
+    }
+
+    .img-service {
+        height: 200px;
+    }
+
+    .title-hethong {
+        margin-bottom: 10px;
+    }
+
+    .img-item {
+        height: 100px;
+    }
+
+    .price {
+        text-align: center;
+        line-height: 26px;
+    }
+
+    .btn-ct {
+        margin-left: -19%;
+    }
+
+    .mobiContact,
+    .menumobi {
+        display: block;
+    }
+
+    .mini-menu {
+        display: none;
+    }
+
+    /* #hethongxuly h3,
+    #vattu-thietbi h3 {
+        line-height: 15px;
+        padding: 5px 0px 0px;
+    } */
+
+    .img-tuvan{
+        height: 200px;
+        width: 96%;
+    }
+    .img-sukien-sm{
+        height: 76px;
+        width: 90px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .phone-ring {
+        display: none;
+    }
+
+    .back-to-top.display {
+        right: 30px;
+    }
+
+    .logo {
+        width: auto;
+        margin-left: 20px;
+    }
+
+    .box-logo {
+        margin: 0;
+        text-align: center;
+        float: left;
+    }
+
+    .img-item {
+        height: 100px;
+    }
+
+    .price {
+        text-align: center;
+    }
+
+    .btn-ct {
+        margin-left: -15%;
+    }
+
+    .menumobi,
+    .icon-menu,
+    .mobiContact {
+        display: block;
+    }
+
+    .mini-menu {
+        display: none;
+    }
+
+    #doitac {
+        padding: 10px 0px !important;
+    }
+
+    .img-tuvan {
+        height: 200px;
+        width: 96%;
+    }
+    .img-sukien-sm{
+        height: 80px;
+        width: 80px;
+    }
+}
+
+@keyframes dh-ring {
+
+    0%,
+    50%,
+    100% {
+        opacity: 0;
+    }
+
+    55%,
+    65%,
+    75%,
+    85% {
+        opacity: 1;
+        transform: rotate(8deg);
+
+    }
+
+    60%,
+    70%,
+    80% {
+        opacity: 1;
+        transform: rotate(-8deg);
+        left: 520px;
+        top: 260px;
+    }
+}
+
+@keyframes dh-move-1 {
+    0% {
+        /* left: -300px; */
+        top: -200px;
+    }
+
+    30%,
+    100% {
+        left: 180px;
+        top: 90px;
+        transform: rotate(3deg);
+    }
+}
+
+@keyframes dh-move-2 {
+
+    0%,
+    30% {
+        /* left: -600px; */
+        top: -200px;
+    }
+
+    50%,
+    100% {
+        left: 300px;
+        top: 190px;
+        transform: rotate(-3deg);
+    }
+}
