@@ -1,0 +1,116 @@
+.news_category
+{
+    padding:50px 0px;
+}
+.news_category .title
+{
+    font-size: 22px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+.news_category .des_top_news
+{
+    padding: 20px 0px;
+}
+.news_category .category_news
+{
+    padding: 20px 0px
+}
+.news_category .col-margin
+{
+    margin-bottom: 24px;
+    transition:0.4s;
+}
+.news_category .col-margin:hover a
+{
+    color: rgb(10, 128, 10);
+}
+.news_category .col-margin:hover
+{
+    transform: scale(1.02);
+}
+.news_category a
+{
+    color: #000;
+    transform: scale(1.02);
+}
+.news_category .box_news .img_news
+{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    overflow: hidden; 
+}
+.news_category .box_news .img_news img
+{
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    transform: scale(1.02);
+}
+.news_category .box_news .border_name
+{
+    height: 100%;
+    width: 100%;
+    min-height: 90px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    -webkit-box-shadow: -1px 5px 7px 2px rgba(0,0,0,0.07);
+    box-shadow: -1px 5px 7px 2px rgba(0,0,0,0.07);
+}
+.news_category .box_news .name
+{
+    padding: 12px;
+    text-align: center;
+    font-weight: 600;
+}
+.news_category .related_news
+{
+    padding:30px 0px; 
+}
+.news_category .related_news h2
+{
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    font-size: 24px;
+}
+/*==========PAGINATION==========*/
+.news_category .pagination ul 
+{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+.news_category .pagination 
+{
+    margin: 20px 0px;
+}
+.news_category .pagination ul li 
+{
+    margin: 0px 5px;
+}
+.news_category .pagination ul li.active a, .pagination ul li a:hover 
+{
+    background-color: #267b19;
+    color: #FFF;
+}
+.news_category  .pagination ul li a 
+{
+    background-color: #dedede;
+    border-radius: 3px;
+    color: #afafaf;
+    padding: 6px;
+    width: 32px;
+    display: inline-block;
+    text-align: center;
+}
+/*==========DETAIL=============*/
+.news_detail .time_post
+{
+    font-weight: 500;
+    font-size: 15px;
+}
+.news_detail .title
+{
+    text-align:center;
+}

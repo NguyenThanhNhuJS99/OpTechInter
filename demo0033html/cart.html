@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="vi-VN">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Demo OT0035</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1" />
+    <!-- my style css -->
+    <link rel="stylesheet" href="css/style.css" defer />
+    <link rel="stylesheet" href="css/cart.css" defer />
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <link type="text/css" href="js/magiczoomplus/magiczoomplus.css" media="all" rel="stylesheet" />
+    <script type="text/javascript" src="js/magiczoomplus/magiczoomplus.js"></script>
+</head>
+
+<body>
+    <!-- this is menu mobile -->
+    <nav id="menu">
+        <ul>
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Về Adac</a></li>
+            <li>
+                <a href="#">Dịch vụ <i class="fas fa-angle-down"></i></a>
+                <ul>
+                    <li>
+                        <a href="#">Kế toán <i class="fas fa-caret-right"></i></a>
+                        <ul>
+                            <li><a href="#">Cơ bản</a></li>
+                            <li><a href="#">Chuyên nghiệp</a></li>
+                            <li><a href="#">Kế toán trưởng</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Kiểm toán</a></li>
+                    <li><a href="#">Tư vấn tài chính</a></li>
+                </ul>
+            </li>
+            <li> <a href="http://localhost/project/html/demo0033html/product_category.html">Sản Phẩm</a></li>
+            <li><a href="#">Tin tức</a></li>
+            <li><a href="#">Tuyển dụng</a></li>
+            <li><a href="#">Báo giá</a></li>
+            <li><a href="#">Liên hệ</a></li>
+        </ul>
+    </nav>
+    <!-- this is menu mobile End -->
+    <div class="full__main">
+        <!-- this is header -->
+        <header>
+            <div class="box__banner" id="banner">
+                <div class="container">
+                    <div class="box">
+                        <div class="row">
+                            <div class="col-lg-1 col-12  col-md-12">
+                                <div class="logo">
+                                    <img src="images/demo/logo.webp" alt="Công ty Aeros" />
+                                    <!-- this is icon menu mobile -->
+                                    <div class="header menuMobi d-lg-none d-md-block ippResS">
+                                        <a href="#menu"><span></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-11 col-9  d-none d-md-none d-lg-block">
+                                <div class="box__menu">
+                                    <ul>
+                                        <li><a href="#">Trang chủ</a></li>
+                                        <li><a href="#">Về Adac</a></li>
+                                        <li>
+                                            <a href="#">Dịch vụ <i class="fas fa-angle-down"></i></a>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Kế toán <i class="fas fa-caret-right"></i></a>
+                                                    <ul>
+                                                        <li><a href="#">Cơ bản</a></li>
+                                                        <li><a href="#">Chuyên nghiệp</a></li>
+                                                        <li><a href="#">Kế toán trưởng</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="#">Kiểm toán</a></li>
+                                                <li><a href="#">Tư vấn tài chính</a></li>
+                                            </ul>
+                                        </li>
+                                        <li> <a href="http://localhost/project/html/demo0033html/product_category.html">Sản
+                                                Phẩm</a></li>
+                                        <li><a href="#">Tin tức</a></li>
+                                        <li><a href="#">Tuyển dụng</a></li>
+                                        <li><a href="#">Báo giá</a></li>
+                                        <li><a href="#">Liên hệ</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- this is header End -->
+        <section class="body__main">
+            <div class="main_cart">
+                <form action="" method="post">
+                    <div class="container">
+                        <!-- this is product_cart -->
+                        <div class="product_cart ">
+                            <div class="row pay_cart">
+                                <div class="col-xl-9 col-sm-7">
+                                    <h2>GIỎ HÀNG</h2>
+                                    <div class="table_cart parent_cart">
+                                        <table  >
+                                            <thead>
+                                                <tr>
+                                                    <th></th>
+                                                    <th>SẢN PHẨM</th>
+                                                    <th>GIÁ</th>
+                                                    <th>SỐ LƯỢNG</th>
+                                                    <th>TỔNG</th>
+                                                    <th></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="itemCart">
+                                                    <td class="td_img">
+                                                        <div class="img_cart"><img src="images/demo/products/1.jpg" alt="">
+                                                        </div>
+                                                    </td>
+                                                    <td class="td_name">
+                                                        <div class="p_name td_same">Bàn học BH-05</div>
+                                                    </td>
+                                                    <td class="td_price">
+                                                        <div class="p_price td_same">5.000.000</div>
+                                                        <input type="hidden" name="price" class="input_price" value="5000000">
+                                                    </td>
+                                                    <td class="td_qty">
+                                                        <div class="wrap_qty td_same">
+                                                            <div class="qty_box">
+                                                                <span class="sp_qty minus" onclick="quantity_cart(this,'minus');"><i
+                                                                        class="fas fa-minus"></i></span>
+                                                                <span class="quantity">1</span>
+                                                                <input type="hidden" name="input_qty" id="input_qty" value="0" title="quantity">
+                                                                <span class="sp_qty plus" onclick="quantity_cart(this,'plus');"><i
+                                                                        class="fas fa-plus"></i></span>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td class="td_total">
+                                                        <div class="p_total td_same">5.000.000</div>
+                                                        <input type="hidden" name="total" class="input_total" value="5000000">
+                                                    </td>
+                                                    <td class="td_delete">
+                                                        <div class="p_delete td_same" onclick="delItem(this,1);"><i class="fas fa-times"></i></div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="itemCart">
+                                                    <td class="td_img">
+                                                        <div class="img_cart"><img src="images/demo/products/3.jpg" alt="">
+                                                        </div>
+                                                    </td>
+                                                    <td class="td_name">
+                                                        <div class="p_name td_same">Bàn học BH-05</div>
+                                                    </td>
+                                                    <td class="td_price">
+                                                        <div class="p_price td_same">7.000.000</div>
+                                                        <input type="hidden" name="price" class="input_price" value="7000000">
+                                                    </td>
+                                                    <td class="td_qty">
+                                                        <div class="wrap_qty td_same">
+                                                            <div class="qty_box">
+                                                                <span class="sp_qty minus" onclick="quantity_cart(this,'minus');"><i
+                                                                        class="fas fa-minus"></i></span>
+                                                                <span class="quantity">1</span>
+                                                                <input type="hidden" name="input_qty" id="input_qty" value="0" title="quantity">
+                                                                <span class="sp_qty plus" onclick="quantity_cart(this,'plus');"><i
+                                                                        class="fas fa-plus"></i></span>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td class="td_total">
+                                                        <div class="p_total td_same">7.000.000</div>
+                                                        <input type="hidden" name="total" class="input_total" value="7000000">
+                                                    </td>
+                                                    <td class="td_delete">
+                                                        <div class="p_delete td_same" onclick="delItem(this,1);"><i class="fas fa-times"></i></div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="row wrap_btn_code">
+                                        <div class="col-md-6 btn_back_view">
+                                            <a href="product_category.html"><i class="fas fa-long-arrow-alt-left"></i>Quay lại cửa hàng</a>
+                                        </div>
+                                        <div class="col-md-6 code_reduce">
+                                            <div class="space__between">
+                                                <p>MÃ GIẢM GIÁ </p>
+                                                <i class="fas fa-chevron-down"></i>
+                                            </div>
+                                            <input type="text" name="code_reduce" placeholder="Nhập mã">
+                                            <button type="submit" class="useCode">ÁP DỤNG</button>
+                                        </div>                                        
+                                    </div>
+                                </div>
+                                <div class="col-xl-3  col-sm-5">
+                                    <div class="shipping">
+                                        <div class="bg_shipping">
+                                            <div class="networking">
+                                                <i class="fas fa-globe-americas"></i> <span>Vận chuyển toàn quốc</span>
+                                            </div>
+                                            <div class="support_pay">
+                                                <i class="fab fa-cc-amazon-pay"></i> <span>Hỗ trợ thanh toán</span>
+                                            </div>
+                                            <div class="bill">
+                                                <i class="fas fa-paste"></i> <span> Xuất hóa đơn đầy đủ</span>
+                                            </div>
+                                            <div class="transfer_online">
+                                                <i class="fas fa-money-check"></i><span>Thanh toán trực tuyến hoặc khi nhận
+                                                    hàng</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- this is end product_cart--> 
+                        <!-- this is Pay Cart -->
+                        <div class="pay_cart">
+                            <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-sm-6 col-margin">
+                                            <div class="code_reduce">
+                                                <div class="space__between">
+                                                    <p>MÃ GIẢM GIÁ </p>
+                                                    <i class="fas fa-chevron-down"></i>
+                                                </div>
+                                                <input type="text" name="code_reduce" placeholder="Nhập mã">
+                                                <button type="submit" class="useCode">ÁP DỤNG</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-5 col-sm-7 col-margin">
+                                            <div class="shipping_fee">
+                                                <div class="space__between">
+                                                    <p>TÍNH PHÍ GIAO HÀNG </p>
+                                                    <i class="fas fa-chevron-down"></i>
+                                                </div>
+                                                <div class="div_select">
+                                                    <select name="nation" id="nation">
+                                                        <option value="">Việt nam</option>
+                                                        <option value="">Mỹ</option>
+                                                    </select>
+                                                </div>
+                                                <div class="div_select">
+                                                    <select name="city" id="city">
+                                                        <option value="">Hồ chí minh</option>
+                                                    </select>
+                                                </div>
+                                                <div class="div_select">
+                                                    <select name="district" id="district">
+                                                        <option value="">Thủ đức</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-sm-5 d-flex t-justify-content">
+                                            <div class="wrap_pay">
+                                                    <div class="bg_bill">
+                                                        <div class="text_price">
+                                                            <p>Tạm tính</p>
+                                                            <p>12.000.000</p>
+                                                        </div>
+                                                        <div class="text_shipping">
+                                                            <p>Giao hàng</p>
+                                                            <p>Giao hàng miễn phí</p>
+                                                            <p>Shipping to Hồ Chí Minh</p>
+                                                        </div>
+                                                        <div class="text_total">
+                                                            <p>Tổng: </p>
+                                                            <p class="total_price">12.000.000</p>
+                                                            <input type="hidden" name="totalPay" id="totalPay" value="">
+                                                        </div>
+                                                     </div>
+                                                <button type="submit" class="btn_StartPay">Tiến hành thanh toán</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                        <!-- this is end Pay cart--> 
+                    </div>                    
+                </form>
+            </div>
+        </section>
+        <!-- this is footer -->
+        <footer>
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-6 mr-bottom-30px">
+                            <div class="ft_top_design">
+                                <h2>THIẾT KẾ THI CÔNG NỘI THẤT</h2>
+                                <ul>
+                                    <li><a href="">Shop - Showroom</a></li>
+                                    <li><a href="">Văn phòng trung tâm</a></li>
+                                    <li><a href="">Thiết kế spa - tiệm nail</a></li>
+                                    <li><a href="">Căn hộ chung cư</a></li>
+                                    <li><a href="">Quán cafe - trà sữa - nhà hàng</a></li>
+                                    <li><a href="">Nhà phố - biệt thự</a></li>
+                                    <li><a href="">Phòng khám - nhà thuốc</a></li>
+                                    <li><a href="">Tủ bếp đẹp</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-sm-6 mr-bottom-30px">
+                            <div class="ft_top_intro">
+                                <h2>GIỚI THIỆU</h2>
+                                <div class="row">
+                                    <div class="col-md-6 col-mn">
+                                        <a href="">Shop - Showroom</a>
+                                    </div>
+                                    <div class="col-md-6 col-mn">
+                                        <a href="">Văn phòng trung tâm</a>
+                                    </div>
+                                    <div class="col-md-6 col-mn">
+                                        <a href="">Thiết kế spa - tiệm nail</a>
+                                    </div>
+                                    <div class="col-md-6 col-mn">
+                                        <a href="">Căn hộ chung cư</a>
+                                    </div>
+                                    <div class="col-md-6 col-mn">
+                                        <a href="">Quán cafe - trà sữa - nhà hàng</a>
+                                    </div>
+                                    <div class="col-md-6 col-mn">
+                                        <a href="">Nhà phố - biệt thự</a>
+                                    </div>
+                                    <div class="col-md-6 col-mn">
+                                        <a href="">Phòng khám - nhà thuốc</a>
+                                    </div>
+                                    <div class="col-md-6 col-mn"><a href="">Tủ bếp đẹp</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 mr-bottom-30px">
+                            <div class="ft_top_alert">
+                                <h2>ĐĂNG KÝ NHẬN THÔNG BÁO</h2>
+                                <div class="input_mail">
+                                    <form action="" method="post">
+                                        <input type="email" name="email" required="" placeholder="Email của bạn"
+                                            id="" />
+                                        <button type="button">GỬI ĐI</button>
+                                    </form>
+                                </div>
+                                <div class="alert_auth">
+                                    <img class="lazy" data-src="images/demo/ft_alert.webp" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="box_contents">
+                                <h2>Công ty cp xd và nội thất Aeros</h2>
+                                <div class="address">
+                                    <i class="fas fa-home"></i>
+                                    <span>
+                                        Khu Biệt Thự 56/2 Nguyễn Văn Săng, P.Tân Sơn Nhì, Q.Tân
+                                        Phú, TP.HCM</span>
+                                </div>
+                                <div class="phone">
+                                    <i class="fas fa-phone-square-alt"></i>
+                                    <span>0901 806 999 - 0905 224 888</span>
+                                </div>
+                            </div>
+                            <div class="box_contents">
+                                <h2>VĂN PHÒNG BÌNH DƯƠNG</h2>
+                                <div class="address">
+                                    <i class="fas fa-home"></i>
+                                    <span>
+                                        Khu Biệt Thự 56/2 Nguyễn Văn Săng, P.Tân Sơn Nhì, Q.Tân
+                                        Phú, TP.HCM</span>
+                                </div>
+                                <div class="phone">
+                                    <i class="fas fa-phone-square-alt"></i>
+                                    <span>0901 806 999 - 0905 224 888</span>
+                                </div>
+                            </div>
+                            <div class="box_contents">
+                                <h2>VĂN PHÒNG ĐỒNG NAI</h2>
+                                <div class="address">
+                                    <i class="fas fa-home"></i>
+                                    <span>
+                                        Khu Biệt Thự 56/2 Nguyễn Văn Săng, P.Tân Sơn Nhì, Q.Tân
+                                        Phú, TP.HCM</span>
+                                </div>
+                                <div class="phone">
+                                    <i class="fas fa-phone-square-alt"></i>
+                                    <span>0901 806 999 - 0905 224 888</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="box_contents">
+                                <h2>VĂN PHÒNG BÌNH DƯƠNG</h2>
+                                <div class="address">
+                                    <i class="fas fa-home"></i>
+                                    <span>
+                                        Khu Biệt Thự 56/2 Nguyễn Văn Săng, P.Tân Sơn Nhì, Q.Tân
+                                        Phú, TP.HCM</span>
+                                </div>
+                                <div class="phone">
+                                    <i class="fas fa-phone-square-alt"></i>
+                                    <span>0901 806 999 - 0905 224 888</span>
+                                </div>
+                            </div>
+                            <div class="box_contents">
+                                <h2>VĂN PHÒNG BÌNH DƯƠNG</h2>
+                                <div class="address">
+                                    <i class="fas fa-home"></i>
+                                    <span>
+                                        Khu Biệt Thự 56/2 Nguyễn Văn Săng, P.Tân Sơn Nhì, Q.Tân
+                                        Phú, TP.HCM</span>
+                                </div>
+                                <div class="phone">
+                                    <i class="fas fa-phone-square-alt"></i>
+                                    <span>0901 806 999 - 0905 224 888</span>
+                                </div>
+                            </div>
+                            <div class="box_contents">
+                                <h2>VĂN PHÒNG BÌNH DƯƠNG</h2>
+                                <div class="address">
+                                    <i class="fas fa-home"></i>
+                                    <span>
+                                        Khu Biệt Thự 56/2 Nguyễn Văn Săng, P.Tân Sơn Nhì, Q.Tân
+                                        Phú, TP.HCM</span>
+                                </div>
+                                <div class="phone">
+                                    <i class="fas fa-phone-square-alt"></i>
+                                    <span>0901 806 999 - 0905 224 888</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="box_contents col-contact">
+                                <div class="box_fanpage">
+                                    <iframe
+                                        src="https://www.facebook.com/plugins/page.php?href=facebook.com/optechcty&width=500&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                                        width="100%" height="100%" style="border:none;overflow:hidden" scrolling="no"
+                                        frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                                </div>
+                                <div class="box_socials">
+                                    <p>MẠNG XÃ HỘI</p>
+                                    <div class="icons_social">
+                                        <div class="icons">
+                                            <a href=""><img src="images/demo/icon/fb.webp" alt="" /></a>
+                                        </div>
+                                        <div class="icons">
+                                            <a href=""><img src="images/demo/icon/zalo.webp" alt="" /></a>
+                                        </div>
+                                        <div class="icons">
+                                            <a href=""><img src="images/demo/icon/youtube.webp" alt="" /></a>
+                                        </div>
+                                        <div class="icons">
+                                            <a href=""><img src="images/demo/icon/skype.webp" alt="" /></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copy__right">
+                <div class="container">
+                    <p>Copyright © 2020. Thiết kể bởi OpTech</p>
+                </div>
+            </div>
+        </footer>
+        <!-- this is footer End -->
+    </div>
+    <!-- Back to Top -->
+    <a href="#" class="go__top"><i class="fas fa-arrow-up"></i></a>
+    <!-- this is hotline mobile -->
+    <div class="hotline__mobile .d-block d-md-none">
+        <div class="box">
+            <div class="item m_border">
+                <a href="#"><i class="fas fa-phone-alt"></i></a>
+            </div>
+            <div class="item m_border">
+                <a href="#"><i class="far fa-comment"></i></a>
+            </div>
+            <div class="item">
+                <a href="#"><i class="fab fa-facebook-messenger"></i></a>
+            </div>
+        </div>
+    </div>
+    <!-- this is hotline mobile end -->
+    <script src="js/jquery.lazy.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <!-- mmenu css -->
+    <link type="text/css" rel="stylesheet" href="js/mmenu/demo.css" />
+    <link type="text/css" rel="stylesheet" href="js/mmenu/mmenu.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-- slick-->
+    <link rel="stylesheet" type="text/css" href="js/slick/slick.css" />
+    <script type="text/javascript" src="js/slick/slick.min.js"></script>
+    <script type="text/javascript" src="js/slick/slick-animation.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <!-- mmenu JS -->
+    <script type="text/javascript" src="js/mmenu/mmenu.js"></script>
+    <script src="js/mmenu/mmenu.polyfills.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("nav#menu").mmenu();
+        });
+    </script>
+</body>
+
+</html>

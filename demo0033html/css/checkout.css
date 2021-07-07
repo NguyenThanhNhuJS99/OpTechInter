@@ -1,0 +1,133 @@
+.Checkout
+{
+    padding:50px 0px;
+}
+.Checkout h2
+{
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    text-transform: uppercase;
+}
+.Checkout .col-margin
+{
+    margin-bottom: 20px;
+}
+.Checkout .bg_bill 
+{
+    font-weight: 500;
+    padding: 30px;
+    background-color: #f1f1f1;
+}
+.Checkout .bg_bill .text_price 
+{
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: bold;
+}
+.Checkout .bg_bill .text_shipping 
+{
+    padding: 20px 0px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+.Checkout .products
+{
+    padding: 20px 0px;
+    border-top: 1px solid #ddd;
+}
+.Checkout .item
+{
+    display: flex;
+    justify-content: space-between;
+}
+.Checkout .item:not(:last-child)
+{
+    margin-bottom: 20px;
+}
+.Checkout .same_info
+{
+    padding:10px 0px;
+}
+.Checkout .same_info input
+{
+    width: 100%;
+    padding: 10px 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.Checkout .bg_bill .text_shipping p:not(:last-child) 
+{
+    margin-bottom: 15px;
+}
+.Checkout .bg_bill .text_shipping p,
+.Checkout .bg_bill .text_total p 
+{
+    margin-bottom: 0;
+}
+.Checkout .bg_bill .text_total 
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+    border-bottom: 1px solid #ddd;
+}
+.Checkout .bg_bill .text_total p:nth-child(1) 
+{
+    font-weight: bold;
+    font-size: 18px;
+}
+.Checkout .bg_bill .text_total p:nth-child(2) 
+{
+    font-size: 18px;
+    font-weight: bold;
+    color: #f11414;
+}
+.Checkout .btn_StartPay 
+{
+    margin-top: 20px;
+    background: green;
+    color: white;
+    font-weight: bold;
+    width: 200px;
+    font-size: 16px;
+    padding: 12px 0px;
+    border: none;
+    border-radius: 5px;
+    -webkit-box-shadow: -1px 0px 7px 3px rgba(0, 0, 0, 0.2);
+    box-shadow: -1px 0px 7px 3px rgba(0, 0, 0, 0.2);
+}
+.Checkout .method_pay
+{
+    padding: 20px 0px;
+}
+.Checkout .method_pay .radio label:hover   
+{
+    cursor: pointer;
+}
+.Checkout .method_pay .vnpay_des
+{
+    padding: 10px 15px;
+    color: #9c9c9c;
+}
+.Checkout .method_pay .radio:not(:last-child)
+{
+    margin-bottom: 10px;
+}
+.Checkout .method_pay span
+{
+    display:inline-block;
+    margin-left: 10px;
+}
+/*=============RESPONSIVE===========*/
+@media screen and (max-width: 540px) 
+{
+    .Checkout 
+    {
+        padding: 35px 0px;
+    }
+    .Checkout h2 
+    {
+        font-size: 20px;
+    }
+}

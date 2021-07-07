@@ -1,0 +1,1165 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap');
+
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.mainWebsite {
+    overflow: hidden;
+}
+
+.sticky {
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    z-index: 999999;
+    background-color: #fff !important;
+    box-shadow: 0 0 9px #888;
+}
+
+.items {
+    outline: none !important;
+}
+
+.sticky .boxImgLogo img {
+    width: 120px !important;
+}
+
+/* ------------- HEADER ------------- */
+header {
+    box-shadow: 0 0 9px #888;
+    position: sticky;
+    z-index: 99;
+}
+
+header .socialContact {
+    text-align: right;
+    padding: 0;
+    background-color: #faf7da;
+}
+header .socialContact p{
+    display: inline-block;
+    float: left;
+    font-size: 14px;
+    margin: 0;
+    line-height: 30px;
+}
+header .socialContact a {
+    padding-left: 8px;
+    font-size: 20px;
+}
+
+header .menuSearch {
+    padding: 10px 0;
+}
+
+header .menuSearch .boxSearch {
+    position: relative;
+    margin: auto 0;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+header .menuSearch .boxSearch input {
+    padding: 8px 10px;
+    border: 1px dashed #bdafa9;
+    background-color: #fef5f1;
+    outline: none;
+    border-radius: 20px;
+    width: 100%;
+}
+
+header .menuSearch .boxSearch .iconSearch {
+    position: absolute;
+    align-self: center;
+    right: 2%;
+    outline: none;
+    border: none;
+    color: #ec6626;
+    background: transparent;
+}
+
+
+header .menuSearch .boxImgLogo {
+    text-align: center;
+}
+
+header .menuSearch .boxImgLogo img {
+    width: 160px;
+}
+
+header .menuSearch .boxCartFlat {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+}
+
+header .menuSearch .boxCart .imgCart {
+    position: relative;
+}
+
+header .menuSearch .boxCart .imgCart .totalItems {
+    position: absolute;
+    top: -13px;
+    left: 38px;
+    background-color: red;
+    padding: 0 5px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 13px;
+}
+
+header .menuSearch .boxCart {
+    display: flex !important;
+}
+
+.fl-end {
+    align-self: flex-end;
+}
+
+header .menuSearch .boxCart i {
+    font-size: 29px;
+}
+
+header .menuSearch .boxCart img {
+    display: inline;
+    margin-left: 15px;
+    vertical-align: top;
+    width: 28px;
+}
+
+header .menu {
+    text-align: center;
+    border-top: 2px dashed #ebebeb;
+}
+
+header nav {
+    height: 50px;
+}
+
+header ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    display: inline-block;
+}
+
+header ul li {
+    float: left;
+    padding: 0 20px;
+    position: relative;
+}
+
+header ul li a {
+    text-transform: uppercase;
+    color: #323232;
+    line-height: 50px;
+    font-weight: 900;
+    font-size: 16px;
+    font-family: 'Comfortaa', cursive;
+}
+
+ul li a:hover {
+    text-decoration: none !important;
+}
+
+header ul li a:hover {
+    color: #ec6626;
+    border: none;
+    border-bottom: 2px solid #ec6626;
+}
+header .mainMenu ul li ul {
+    visibility: hidden;
+    position: absolute;
+    opacity: 0;
+    top: 105px;
+    left: 0px;
+    width: 250px;
+    background: #FFF;
+    z-index: 9999;
+    transition: 0.4s;
+    box-shadow: 0 2px 2px 0 rgba(60, 75, 100, .14), 0 3px 1px -2px rgba(60, 75, 100, .12), 0 1px 5px 0 rgba(60, 75, 100, .2);
+}
+
+header .mainMenu ul li ul:before {
+    border: 8px solid transparent;
+    border-bottom-color: #FFF;
+    bottom: 100%;
+    left: 20px;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+header .mainMenu ul li ul li a:hover {
+    color: #f36623;
+    transition: 0.2s;
+    font-family: 'Comfortaa', cursive;
+    border: none;
+}
+
+header .mainMenu ul li:hover>ul {
+    visibility: visible;
+    top: 51px;
+    opacity: 1;
+}
+
+header .mainMenu ul li ul li {
+    padding: 5px 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    width: 100%;
+}
+
+header .mainMenu ul li ul li a {
+    padding: 0px;
+    text-transform: capitalize;
+    line-height: 30px;
+    display: block;
+    position: relative;
+    text-align: left;
+    text-transform: uppercase;
+    color: #323232;
+    font-weight: 900;
+    font-size: 14px;
+    font-family: 'Comfortaa', cursive;
+}
+/* ----------- END HEADER ----------- */
+
+/* -------------- BANNER ------------ */
+.boxbanner .bannerTop .multiple-items .items {
+    outline: none;
+}
+
+.boxbanner .bannerTop img {
+    width: 100%;
+}
+
+.boxbanner .items {
+    position: relative;
+}
+
+.boxbanner .btnBanner {
+    outline: none;
+    padding: 4px 20px;
+    background-color: #000;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: absolute;
+    border-radius: 5px;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+}
+
+.boxbanner .btnBanner:hover {
+    background-color: #ff1414;
+}
+
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 16px 0;
+    list-style: none;
+    bottom: 5px;
+    position: absolute;
+    left: 47%;
+}
+
+.slick-dots li {
+    margin: 0 0.25rem;
+    background: transparent;
+    border-radius: 50%;
+}
+
+.slick-dots button {
+    display: block;
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    font-size: 0;
+    outline: 0;
+}
+
+.slick-dots li.slick-active button {
+    background-color: #fff;
+}
+
+/* ------------ END BANNER ---------- */
+
+/* ------------- FEATURE ------------- */
+.boxfeature {
+    padding: 20px 0;
+}
+
+.boxfeature .itemfeature .boxFeature {
+    display: flex;
+    align-items: center;
+}
+
+.boxfeature .itemfeature .imgFeature {
+    padding: auto;
+    text-align: center;
+    height: 60px;
+    width: 100px;
+    border: 1px dashed #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.boxfeature .itemfeature .featureContent h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.boxfeature .itemfeature .featureContent p {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+/* ----------- END FEATURE ----------- */
+
+/* ------------ COMBO 01 ------------ */
+.boxCombo {
+    padding: 30px 0 10px;
+}
+
+.boxtitle {
+    position: relative;
+    text-align: center;
+}
+
+.boxtitle hr {
+    border-top: 1px dashed #000;
+    border-bottom: 1px dashed #000;
+    height: 1px;
+}
+
+.boxtitle h2 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    display: inherit;
+    transform: translate(-50%, -52%);
+    padding: 5px 10px;
+    background-color: #fff;
+    font-size: 34px;
+    font-family: 'Comfortaa', cursive;
+}
+
+.boxCombo {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.boxCombo img {
+    width: 100%;
+}
+
+.multiple-items-Combo01 .items {
+    margin: 10px 20px;
+    outline: none;
+}
+
+.boxItemCombo {
+    padding: 30px 0;
+}
+
+.boxItemCombo .itemCombo {
+    text-align: center;
+    border: 1px solid rgb(212, 212, 212);
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.boxItemCombo .itemCombo img {
+    transition: 1s;
+}
+
+.boxItemCombo .itemCombo .imgItemCombo {
+    overflow: hidden;
+}
+
+.boxItemCombo .itemCombo:hover {
+    box-shadow: 0 0 9px #888;
+}
+
+.boxItemCombo .itemCombo img:hover {
+    transform: scale(1.3);
+    transition: all 0.5s ease-in-out;
+}
+
+.itemCombo .nameCombo {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 5px 0;
+    margin: 0;
+}
+
+.itemCombo .price {
+    font-size: 20px;
+    font-weight: 600;
+    color: #f36623;
+    margin: 0;
+}
+
+.itemCombo .priceSale {
+    color: #e50808;
+    font-weight: 900;
+}
+
+.itemCombo .priceSale span {
+    font-size: 14px;
+    color: #929292;
+    text-decoration-line: line-through;
+}
+
+.contentCombo {
+    padding: 10px 0;
+}
+
+.btnXemThem {
+    outline: none;
+    text-align: center;
+    text-transform: uppercase;
+    background: transparent;
+    font-weight: 600;
+    font-size: 16px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 5px 15px;
+    outline: none;
+    transition: all 0.2s;
+}
+
+.btnXemThem:hover {
+    border: 1px solid #f36623;
+    color: #fff;
+    background-color: #f36623;
+    transform: scale(1.05);
+}
+
+/* ----------- END COMBO 01 --------- */
+
+/* ----------- MINI BANNER ---------- */
+.boxminibanner img {
+    width: 100%;
+}
+
+.boxminibanner .itemMiniBanner {
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-content: space-between;
+}
+
+.boxminibanner .imgBanner img {
+    transition: all 0.3s ease-in-out;
+}
+
+.boxminibanner .imgBanner:hover img {
+    transform: scale(1.01);
+    opacity: 0.7;
+}
+
+.boxminibanner .miniImgMiniBanner {
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+}
+
+/* --------- END MINI BANNER -------- */
+
+/* ----------- BOX COMBO 02 --------- */
+#Combo02 {
+    padding: 70px 0 30px;
+}
+
+#Combo02 .multiple-items-Combo02 .itemCombo {
+    margin: 20px 10px;
+}
+
+/* --------- END BOX COMBO 02 ------- */
+
+/* ------------- CONTACT ------------ */
+.boxcontact {
+    position: relative;
+    margin: 30px 0;
+    overflow: hidden;
+}
+
+.boxcontact .bgContact img {
+    width: 100%;
+}
+
+.boxcontact .contentContact {
+    text-align: center;
+    position: absolute;
+    top: 17%;
+    left: 10px;
+    width: 100%;
+}
+
+.boxcontact .contentContact h3 {
+    font-size: 35px;
+    font-weight: 900;
+    font-family: 'Comfortaa', cursive;
+}
+
+.boxcontact .contentContact p {
+    font-size: 16px;
+    padding: 20px 60px;
+}
+
+.boxcontact .contentContact p span {
+    font-weight: 900;
+}
+
+.boxcontact .contentContact input {
+    width: 486px;
+    display: block;
+    height: 50px;
+    border-radius: 25px;
+    text-align: center;
+    border: 1px solid #000;
+    outline: none;
+    margin: 25px auto;
+}
+
+.boxcontact .contentContact .btnSend {
+    outline: none;
+    border: none;
+    background-color: #f36623;
+    border-radius: 3px;
+    padding: 10px 30px;
+    color: #fff;
+    margin-top: 30px;
+    transition: all 0.3s;
+}
+
+.boxcontact .contentContact .btnSend:hover {
+    background-color: #da4d0c;
+}
+
+/* ----------- END CONTACT ---------- */
+
+/* ------------- TIN TỨC ------------ */
+.boxnews {
+    padding: 30px 0;
+}
+
+.boxnews .listNews {
+    position: relative;
+}
+
+.arrow-prev,
+.arrow-next {
+    top: 45%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.arrow-prev {
+    background-image: url(../images/previous.png);
+    left: -60px;
+}
+
+.arrow-next {
+    background-image: url(../images/next.png);
+    right: -60px;
+}
+
+.boxnews .btnXemThem {
+    display: flex;
+    margin: 0 auto;
+}
+
+.boxnews .imgNews img {
+    width: 100%;
+    border-radius: 25px;
+}
+
+.boxnews .date {
+    display: inline-block;
+    padding: 5px 20px;
+    margin: 10px 0;
+    border-radius: 20px;
+    background-color: #3a3f71;
+    color: #fff;
+}
+
+.boxnews .itemNews h2 {
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Comfortaa', cursive;
+    margin: 5px 0;
+}
+
+.boxnews .itemNews p {
+    font-family: 'Comfortaa', cursive;
+    font-size: 14px;
+    text-align: justify;
+}
+
+.boxnews .items .itemNews {
+    border-radius: 25px 25px 0 0;
+}
+
+.boxnews .itemNews:hover .date {
+    background-color: #f36623;
+    transition: all 0.3s ease-in-out;
+}
+
+.boxnews .itemNews:hover h2 {
+    font-weight: 900;
+    color: #f36623;
+    transition: all 0.3s ease-in-out;
+}
+
+.boxnews .items {
+    margin: 20px 10px;
+}
+
+/* ----------- END TIN TỨC ---------- */
+
+/* ------------- CAM KẾT ------------ */
+.commitment {
+    /* border-top: 5px solid #f36623;
+    border-bottom: 5px solid #f36623; */
+    position: relative;
+    background-image: url('../images/imgCommitment.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.commitment .borderCommitment{
+    padding: 4px 0px;
+    background-color: #f36623;
+}
+.commitment .borderCommitment hr{
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-top: 1px dashed #fff;
+}
+.commitment .imgCommitment img {
+    width: 100%;
+}
+
+.commitment .contentCommitment {
+    text-align: center;
+    width: 100%;
+    padding: 12px 0;
+}
+
+.commitment .contentCommitment .boxIconCommitment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    background-color: #f36623;
+    height: 60px;
+    width: 75px;
+    margin: 20px auto 15px;
+}
+
+.commitment .contentCommitment .boxIconCommitment .imgIconCommitment {
+    height: 40px;
+    width: 40px;
+}
+
+.commitment .contentCommitment .boxIconCommitment .imgIconCommitment .img {
+    width: 100%;
+}
+
+.commitment .contentCommitment .itemCommitment {
+    padding: 10px 0;
+}
+
+.commitment .contentCommitment .itemCommitment h3 {
+    font-size: 18px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.commitment .contentCommitment .itemCommitment p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* ----------- END CAM KẾT ---------- */
+
+/* -------------- FOOTER ------------ */
+footer {
+    background-image: url('../images/imgBgFooter.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 70px 0 20px;
+    overflow: hidden;
+}
+
+footer h3 {
+    font-size: 24px;
+    color: #fff;
+    font-family: 'Comfortaa', cursive;
+    margin-bottom: 30px;
+}
+
+footer p {
+    color: #b4b5bf;
+    font-size: 14px;
+}
+
+footer p.support {
+    margin: 0;
+    padding: 15px 0;
+    border-bottom: 1px dashed #666;
+}
+
+footer .imgTransport {
+    width: 150px;
+    height: 35px;
+    background-color: #fff;
+    border-radius: 5px;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+footer .imgTransport img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+footer .mainFooter {
+    padding: 0px 0px 40px;
+    border-bottom: 1px dashed #666;
+}
+
+footer .copyRight {
+    text-align: center;
+    padding: 20px 0 0;
+}
+
+footer .copyRight p {
+    padding: 25px 0 0;
+    font-size: 14px;
+    margin: 0;
+    color: #b4b5bf;
+}
+
+/* ------------ END FOOTER ---------- */
+
+/* -------------- TAG GIẢM GIÁ -------------- */
+.itemCombo {
+    position: relative;
+}
+
+.itemCombo .tag {
+    padding: 3px 12px;
+    color: #fff;
+    font-weight: 600;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 14px;
+}
+
+.itemCombo .tagnew {
+    background-color: #00a651;
+}
+
+.itemCombo .taghot {
+    background-color: #00aeef;
+}
+
+.itemCombo .tagsale {
+    background-color: #ed145b;
+}
+
+/* ------------ END TAG GIẢM GIÁ ------------ */
+
+/* --------------- MMENU ------------ */
+.mm-navbar {
+    background: #d02c24;
+}
+
+.mm-navbar a {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #FFF !important;
+    font-size: 16px;
+
+}
+
+.mm-listview {
+    height: 40px;
+}
+
+#my-menu a,
+#my-menu a span,
+#my-menu span {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.menumobi {
+    position: absolute;
+    z-index: 99;
+    width: 40px;
+    height: 40px;
+    display: block;
+    background-color: #d02c24;
+    border-radius: 5px;
+    text-align: center;
+    top: calc(50% - 20px);
+    left: 20px;
+}
+
+.menumobi a {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 40px;
+}
+
+/* -------------- End MMENU ---------- */
+
+/* ------------------ Back to top -------------------*/
+.back-to-top {
+    height: 50px;
+    line-height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    background-color: #cf2a21;
+    bottom: 50px;
+    right: 50px;
+    position: fixed;
+    z-index: 999999;
+    transition: all .5s ease-out;
+    text-align: center;
+    font-size: 24px;
+}
+
+.back-to-top i {
+    color: #fff;
+    margin-top: -2px;
+}
+
+.back-to-top:hover {
+    background-color: #000;
+}
+
+/* ----------------- End Back to top ------------------ */
+
+
+/* ------------ Media Query ---------- */
+@media only screen and (max-width:1200px) {
+    .boxCombo {
+        padding: 0 0 30px;
+    }
+
+    .commitment .contentCommitment .itemCommitment h3 {
+        font-size: 16px;
+        margin: 4px;
+    }
+
+    .commitment .contentCommitment .itemCommitment p {
+        font-size: 13px;
+        margin: 0px;
+    }
+
+    .commitment .contentCommitment .boxIconCommitment {
+        height: 55px;
+        width: 70px;
+        margin: 10px auto 5px;
+    }
+
+    footer p.support {
+        padding: 10px 0;
+    }
+
+    footer p {
+        font-size: 13px;
+    }
+
+    footer h3 {
+        font-size: 21px;
+        margin-bottom: 26px;
+    }
+
+    footer {
+        padding: 40px 0 20px;
+    }
+
+    footer .mainFooter {
+        padding: 0px 0px 20px;
+    }
+
+    footer .copyRight {
+        padding: 10px 0 0;
+    }
+
+    footer .copyRight p {
+        padding: 20px 0 0;
+        font-size: 12px;
+    }
+
+    .boxcontact .contentContact {
+        top: 11%;
+    }
+
+    .boxcontact .contentContact .btnSend {
+        margin-top: 10px;
+    }
+
+    .boxcontact .contentContact input {
+        margin: 20px auto;
+    }
+
+    .boxcontact .contentContact p {
+        padding: 5px 60px;
+    }
+
+    .arrow-next {
+        right: -40px;
+    }
+
+    .arrow-prev {
+        left: -40px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    header .menuSearch .boxSearch {
+        display: none;
+    }
+
+    .boxtitle h2 {
+        font-size: 24px;
+    }
+
+    .itemCombo .price {
+        font-size: 18px;
+    }
+
+    .boxItemCombo {
+        padding: 20px 0;
+    }
+
+    #Combo02 {
+        padding: 50px 0 30px;
+    }
+
+    #Combo02 .multiple-items-Combo02 .itemCombo {
+        margin: 20px 0px;
+    }
+
+    .boxcontact .contentContact h3 {
+        font-size: 21px;
+    }
+
+    .boxcontact .contentContact p {
+        padding: 0px;
+    }
+
+    .boxcontact .contentContact input {
+        width: 380px;
+        height: 44px;
+        margin: 15px auto;
+    }
+
+    .boxcontact .contentContact .btnSend {
+        margin-top: 0px;
+    }
+
+    .boxnews .itemNews p {
+        font-size: 12px;
+    }
+
+    .boxnews .itemNews h2 {
+        font-size: 21px;
+        margin: 0px;
+    }
+
+    .boxfeature .itemfeature .featureContent p {
+        font-size: 12px;
+    }
+
+    .multiple-items-Combo01 .items {
+        margin: 10px
+    }
+
+    .fb-page {
+        width: 250px;
+    }
+
+    .arrow-next,
+    .arrow-prev {
+        display: none !important;
+    }
+
+}
+
+@media only screen and (max-width: 740px) {
+    .boxfeature .itemfeature .featureContent h3 {
+        font-size: 12px;
+    }
+
+    .boxfeature .itemfeature .featureContent p {
+        font-size: 11px;
+    }
+
+    #Combo01 {
+        margin-top: 35px;
+    }
+
+    .boxcontact .contentContact p {
+        font-size: 15px;
+    }
+
+    #Combo02 {
+        padding: 50px 0;
+    }
+}
+
+@media only screen and (max-width: 668px) {
+    .boxcontact .contentContact p {
+        font-size: 13px;
+    }
+
+    .boxcontact .contentContact input {
+        width: 320px;
+        height: 40px;
+        margin: 10px auto;
+    }
+
+    .boxbanner .btnBanner {
+        top: 56%
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    .boxbanner .btnBanner {
+        font-size: 13px;
+        padding: 4px 10px;
+    }
+
+    .itemfeature {
+        margin: 10px 0;
+    }
+
+    .boxfeature .itemfeature .featureContent h3 {
+        font-size: 17px;
+    }
+
+    .boxfeature .itemfeature .featureContent p {
+        font-size: 14px;
+    }
+
+    .imgBanner {
+        margin: 10px 0;
+    }
+
+    .boxcontact .contentContact .btnSend {
+        font-size: 10px;
+        padding: 5px 20px;
+    }
+
+    ::placeholder {
+        font-size: 13px;
+    }
+
+    .boxcontact .contentContact input {
+        width: 180px;
+        height: 25px;
+        margin: 5px auto;
+    }
+
+    .boxcontact .contentContact p {
+        margin: 0px;
+    }
+
+    .boxcontact .contentContact h3 {
+        display: none;
+    }
+
+    .boxcontact .contentContact {
+        top: 10%;
+    }
+
+    footer .copyRight p {
+        padding: 20px 0 0;
+        font-size: 13px;
+    }
+    .back-to-top{
+        bottom: 40px;
+        right: 20px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .boxcontact .contentContact input {
+        width: 170px;
+        height: 22px;
+        margin: 5px auto;
+    }
+
+    .boxcontact .contentContact p {
+        font-size: 12px;
+    }
+
+    footer h3 {
+        margin: 26px 0;
+    }
+
+    footer {
+        padding: 20px 0 20px;
+    }
+
+    footer .imgTransport {
+        margin-bottom: 15px;
+    }
+
+    footer #fb {
+        margin-top: 20px;
+    }
+
+    .itemCombo .price {
+        font-size: 13px;
+    }
+}

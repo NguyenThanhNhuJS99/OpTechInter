@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optech Demo</title>
+    <link rel="shortcut icon" href="images/icon_optech_thumb.jpg">
+
+    <!-- Link stylesheet -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery.mmenu.all.min.css">
+
+    <!-- Link Jquery -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js'></script>
+</head>
+
+<body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v8.0"
+        nonce="HC1tzQ7O"></script>
+    <div id="topscroll" class="mainWebsite">
+        <!--------------- Header Menu -------------->
+        <header>
+            <div class="socialContact d-none d-lg-block">      
+                <div class="container">
+                    <p><i class="fas fa-envelope"></i> &nbsp; support@optech.vn &nbsp; &nbsp; l &nbsp; &nbsp; <i class="fas fa-phone-square"></i> &nbsp; Hotline: 0934 08 44 26</p>
+                    <a href=""><i class="fab fa-facebook-square" style="color:#3b5998"></i></a>
+                    <a href=""><i class="fab fa-pinterest" style="color:#cb2027"></i></a>
+                    <a href=""><i class="fab fa-youtube" style="color:#ff0000"></i></a>
+                    <a href=""><i class="fab fa-tiktok" style="color:#000000"></i></a>
+                    <a href=""><i class="fab fa-instagram-square" style="color:#ae217e"></i></a>
+                </div>
+            </div>
+            <div id="menu" class="menuSearch">
+                <div class="menumobi d-lg-none d-md-block"> <a href="#my-menu" id="open" class="icon-menu">☰</a></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-xl-3 col-md-4 col-sm-4 col-3">
+                            <div class="boxSearch">
+                                <input type="text" name="" id="" placeholder="Nhập từ khóa tìm kiếm ...">
+                                <button class="iconSearch">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="offset-xl-1 col-lg-4 col-xl-4 col-md-4 col-sm-4 col-6">
+                            <div class="boxImgLogo">
+                                <img src="images/logotop.png" alt="">
+                            </div>
+                        </div>
+                        <div class="boxCartFlat col-xl-4 col-lg-4 col-md-4 col-sm-4 col-3">
+                            <div class="boxCart d-none d-lg-block">
+                                <div class="fl-end imgCart">
+                                    <img src="images/bag.png" alt="">
+                                    <p class="totalItems">0</p>
+                                </div>
+                                &nbsp
+                                <div class="fl-end">
+                                    <img src="images/imgflatVN.png" class="d-none d-lg-block" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mainMenu d-none d-lg-block">
+                <div class="container">
+                    <div class="menu">
+                        <nav>
+                            <ul>
+                                <li><a href="#">COMBO TRỌN GÓI KHI ĐI SINH</a></li>
+                                <li><a href="#">COMBO CHO BÉ</a>
+                                    <ul class="submenu-2">
+                                        <li><a href="#">Item 01</a></li>
+                                        <li><a href="#">Item 02</a></li>
+                                        <li><a href="#">Item 03</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">COMBO KHUYẾN MÃI</a></li>
+                                <li><a href="#">BLOCK KIDYOURS</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!------------- End Header Menu ------------>
+        <div id="mainWeb" class="mainWeb">
+            <div class="boxbanner">
+                <div class="for_slick_slider multiple-items">
+                    <div class="items">
+                        <div class="bannerTop">
+                            <img src="images/banner.png" alt="">
+                        </div>
+                        <button class="btnBanner">SHOP NOW</button>
+                    </div>
+                    <div class="items">
+                        <div class="bannerTop">
+                            <img src="images/banner.png" alt="">
+                        </div>
+                        <button class="btnBanner">SHOP NOW</button>
+                    </div>
+                    <div class="items">
+                        <div class="bannerTop">
+                            <img src="images/banner.png" alt="">
+                        </div>
+                        <button class="btnBanner">SHOP NOW</button>
+                    </div>
+                </div>
+            </div>
+            <div class="boxfeature">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-sm-4 col-md-4 col-lg-4">
+                            <div class="itemfeature">
+                                <div class="row">
+                                    <div class="col-3 col-sm-4 col-md-3 col-lg-3">
+                                        <div class="boxFeature">
+                                            <div class="imgFeature">
+                                                <img src="images/imgCarShipping.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-9 col-sm-8 col-md-9 col-lg-9">
+                                        <div class="featureContent">
+                                            <h3>FREE SHIPPING</h3>
+                                            <p>Miễn phí giao hàng cho đơn trên 500.000đ</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4 col-md-4 col-lg-4">
+                            <div class="itemfeature">
+                                <div class="row">
+                                    <div class="col-3 col-sm-4 col-md-3 col-lg-3">
+                                        <div class="boxFeature">
+                                            <div class="imgFeature">
+                                                <img src="images/imgVietNam.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-9 col-sm-8 col-md-9 col-lg-9">
+                                        <div class="featureContent">
+                                            <h3>BÁN HÀNG</h3>
+                                            <p>Bán hàng trên toàn quốc</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4 col-md-4 col-lg-4">
+                            <div class="itemfeature">
+                                <div class="row">
+                                    <div class="col-3 col-sm-4 col-md-3 col-lg-3">
+                                        <div class="boxFeature">
+                                            <div class="imgFeature">
+                                                <img src="images/imgPhone.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-9 col-sm-8 col-md-9 col-lg-9">
+                                        <div class="featureContent">
+                                            <h3>HOTLINE</h3>
+                                            <p>1900 988 960 (8h -21h)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Combo01" class="boxCombo">
+                <div class="container">
+                    <div class="boxtitle">
+                        <hr>
+                        <h2>Combo trọn gói khi sinh</h2>
+                    </div>
+                    <div class="boxItemCombo">
+                        <div class="for_slick_slider multiple-items-Combo01">
+                            <div class="items">
+                                <div class="itemCombo">
+                                    <div class="imgItemCombo">
+                                        <img src="images/imgItem01.png" alt="">
+                                    </div>
+                                    <div class="contentCombo">
+                                        <h3 class="nameCombo">Combo cho mẹ và bé HDS12</h3>
+                                        <p class="price">960.000Đ</p>
+                                    </div>
+                                    <div class="tag tagnew">
+                                        New
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="items">
+                                <div class="itemCombo">
+                                    <div class="imgItemCombo">
+                                        <img src="images/imgItem02.png" alt="">
+                                    </div>
+                                    <div class="contentCombo">
+                                        <h3 class="nameCombo">Combo cho mẹ và bé HDS12</h3>
+                                        <p class="price priceSale">850.000Đ <span>1.150.000Đ</span></p>
+                                    </div>
+                                    <div class="tag taghot">
+                                        Hot
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="items">
+                                <div class="itemCombo">
+                                    <div class="imgItemCombo">
+                                        <img src="images/imgItem03.png" alt="">
+                                    </div>
+                                    <div class="contentCombo">
+                                        <h3 class="nameCombo">Combo cho mẹ và bé HDS12</h3>
+                                        <p class="price">960.000Đ</p>
+                                    </div>
+                                    <div class="tag tagsale">
+                                        -15%
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="items">
+                                <div class="itemCombo">
+                                    <div class="imgItemCombo">
+                                        <img src="images/imgItem04.png" alt="">
+                                    </div>
+                                    <div class="contentCombo">
+                                        <h3 class="nameCombo">Combo cho mẹ và bé HDS12</h3>
+                                        <p class="price">960.000Đ</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btnXemThem">Xem Thêm</button>
+                </div>
+            </div>
+            <div class="boxminibanner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                            <div class="itemMinniBanner">
+                                <div class="imgBanner">
+                                    <img src="images/imgMiniBanner01.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                            <div class="itemMiniBanner">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <div class="imgBanner">
+                                            <img src="images/imgMiniBanner02.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <div class="miniImgMiniBanner">
+                                            <div class="imgBanner">
+                                                <img src="images/imgMiniBanner03.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                            <div class="itemMinniBanner">
+                                <div class="imgBanner">
+                                    <img src="images/imgMiniBanner04.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Combo02" class="boxCombo">
+                <div class="container">
+                    <div class="boxtitle">
+                        <hr>
+                        <h2>Combo cho bé</h2>
+                    </div>
+                    <div class="boxItemCombo">
+                        <div class="for_slick_slider multiple-items-Combo02">
+                            <div class="items">
+                                <div class="row">
+                                    <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+                                        <div class="itemCombo">
+                                            <div class="imgItemCombo">
+                                                <img src="images/imgItem02.png" alt="">
+                                            </div>
+                                            <div class="contentCombo">
+                                                <h3 class="nameCombo">Combo cho mẹ và bé HDS12</h3>
+                                                <p class="price priceSale">750.000Đ <span>1.200.000Đ</span></p>
+                                            </div>
+                                            <div class="tag tagsale">
+                                                -35%
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+                                        <div class="itemCombo">
+                                            <div class="imgItemCombo">
+                                                <img src="images/imgItem02.png" alt="">
+                                            </div>
+                                            <div class="contentCombo">
+                                                <h3 class="nameCombo">Combo cho mẹ và bé HDS12</h3>
+                                                <p class="price priceSale">950.000Đ <span>1.350.000Đ</span></p>
+                                            </div>
+                                            <div class="tag tagnew">
+                                                New
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+                                        <div class="itemCombo">
+                                            <div class="imgItemCombo">
+                                                <img src="images/imgItem02.png" alt="">
+                                            </div>
+                                            <div class="contentCombo">
+                                                <h3 class="nameCombo">Combo cho mẹ và bé HDS12</h3>
+                                                <p class="price">960.000Đ</p>
+                                            </div>
+                                            <div class="tag taghot">
+                                                Hot
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+                                        <div class="itemCombo">
+                                            <div class="imgItemCombo">
+                                                <img src="images/imgItem02.png" alt="">
+                                            </div>
+                                            <div class="contentCombo">
+                                                <h3 class="nameCombo">Combo cho mẹ và bé HDS12</h3>
+                                                <p class="price">960.000Đ</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+                                        <div class="itemCombo">
+                                            <div class="imgItemCombo">
+                                                <img src="images/imgItem02.png" alt="">
+                                            </div>
+                                            <div class="contentCombo">
+                                                <h3 class="nameCombo">Combo cho mẹ và bé HDS12</h3>
+                                                <p class="price">960.000Đ</p>
+                                            </div>
+                                            <div class="tag tagnew">
+                                                New
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+                                        <div class="itemCombo">
+                                            <div class="imgItemCombo">
+                                                <img src="images/imgItem02.png" alt="">
+                                            </div>
+                                            <div class="contentCombo">
+                                                <h3 class="nameCombo">Combo cho mẹ và bé HDS12</h3>
+                                                <p class="price">960.000Đ</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+                                        <div class="itemCombo">
+                                            <div class="imgItemCombo">
+                                                <img src="images/imgItem02.png" alt="">
+                                            </div>
+                                            <div class="contentCombo">
+                                                <h3 class="nameCombo">Combo cho mẹ và bé HDS12</h3>
+                                                <p class="price">960.000Đ</p>
+                                            </div>
+                                            <div class="tag tagnew">
+                                                New
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-sm-6 col-md-6 col-lg-3">
+                                        <div class="itemCombo">
+                                            <div class="imgItemCombo">
+                                                <img src="images/imgItem02.png" alt="">
+                                            </div>
+                                            <div class="contentCombo">
+                                                <h3 class="nameCombo">Combo cho mẹ và bé HDS12</h3>
+                                                <p class="price">960.000Đ</p>
+                                            </div>
+                                            <div class="tag taghot">
+                                                Hot
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btnXemThem">Xem Thêm</button>
+                </div>
+            </div>
+            <div id="Combo03" class="boxCombo">
+                <div class="container">
+                    <div class="boxtitle">
+                        <hr>
+                        <h2>Combo khuyến mãi</h2>
+                    </div>
+                    <div class="boxItemCombo">
+                        <div class="for_slick_slider multiple-items-Combo01">
+                            <div class="items">
+                                <div class="itemCombo">
+                                    <div class="imgItemCombo">
+                                        <img src="images/imgItem01.png" alt="">
+                                    </div>
+                                    <div class="contentCombo">
+                                        <h3 class="nameCombo">Combo cho mẹ và bé HDS12</h3>
+                                        <p class="price">960.000Đ</p>
+                                    </div>
+                                    <div class="tag tagnew">
+                                        New
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="items">
+                                <div class="itemCombo">
+                                    <div class="imgItemCombo">
+                                        <img src="images/imgItem02.png" alt="">
+                                    </div>
+                                    <div class="contentCombo">
+                                        <h3 class="nameCombo">Combo cho mẹ và bé HDS12</h3>
+                                        <p class="price">960.000Đ</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="items">
+                                <div class="itemCombo">
+                                    <div class="imgItemCombo">
+                                        <img src="images/imgItem03.png" alt="">
+                                    </div>
+                                    <div class="contentCombo">
+                                        <h3 class="nameCombo">Combo cho mẹ và bé HDS12</h3>
+                                        <p class="price priceSale">750.000Đ <span>1.250.000Đ</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="items">
+                                <div class="itemCombo">
+                                    <div class="imgItemCombo">
+                                        <img src="images/imgItem04.png" alt="">
+                                    </div>
+                                    <div class="contentCombo">
+                                        <h3 class="nameCombo">Combo cho mẹ và bé HDS12</h3>
+                                        <p class="price">960.000Đ</p>
+                                    </div>
+                                    <div class="tag tagsale">
+                                        -20%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btnXemThem">Xem Thêm</button>
+                </div>
+            </div>
+            <div class="boxcontact">
+                <div class="bgContact">
+                    <img src="images/imgContact.png" alt="">
+                </div>
+                <div class="contentContact">
+                    <div class="container">
+                        <div class="row">
+                            <div class="offset-5 col-lg-7 col-md-7">
+                                <h3>"Những điều tuyệt vời nhất mẹ dành cho con!"</h3>
+                                <p><span>Combo theo yêu cầu!</span> - Mẹ bầu muốn chuẩn bị những gì cho con hãy để lại
+                                    thông tin cho chúng tôi!</p>
+                                <input type="text" placeholder="Họ và tên">
+                                <input type="text" placeholder="Số điện thoại">
+                                <button class="btnSend">GỬI ĐI</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="boxnews">
+                <div class="container">
+                    <div class="boxtitle">
+                        <hr>
+                        <h2>Tin tức mới nhất</h2>
+                    </div>
+                    <div class="listNews">
+                        <div class="for_slick_slider multiple-items-news">
+                            <div class="items">
+                                <div class="itemNews">
+                                    <div class="imgNews">
+                                        <img src="images/imgNews01.png" alt="">
+                                    </div>
+                                    <p class="date">
+                                        25 tháng 9, 2020
+                                    </p>
+                                    <h2>Bộ sưu tập mùa hè mới nhất cho bé</h2>
+                                    <p>Nếu bạn là tín đồ của decor trang trí nhà cửa hay muốn xây dựng cho bản thân một
+                                        nơi
+                                        an toàn mỗi khi trở về thì BEYOURs chính là sự lựa chọn hàng đầu dành cho...</p>
+                                </div>
+                            </div>
+                            <div class="items">
+                                <div class="itemNews">
+                                    <div class="imgNews">
+                                        <img src="images/imgNews02.png" alt="">
+                                    </div>
+                                    <p class="date">
+                                        25 tháng 9, 2020
+                                    </p>
+                                    <h2>Bộ sưu tập mùa hè mới nhất cho bé</h2>
+                                    <p>Nếu bạn là tín đồ của decor trang trí nhà cửa hay muốn xây dựng cho bản thân một
+                                        nơi
+                                        an toàn mỗi khi trở về thì BEYOURs chính là sự lựa chọn hàng đầu dành cho...</p>
+                                </div>
+                            </div>
+                            <div class="items">
+                                <div class="itemNews">
+                                    <div class="imgNews">
+                                        <img src="images/imgNews03.png" alt="">
+                                    </div>
+                                    <p class="date">
+                                        25 tháng 9, 2020
+                                    </p>
+                                    <h2>Bộ sưu tập mùa hè mới nhất cho bé</h2>
+                                    <p>Nếu bạn là tín đồ của decor trang trí nhà cửa hay muốn xây dựng cho bản thân một
+                                        nơi
+                                        an toàn mỗi khi trở về thì BEYOURs chính là sự lựa chọn hàng đầu dành cho...</p>
+                                </div>
+                            </div>
+                            <div class="items">
+                                <div class="itemNews">
+                                    <div class="imgNews">
+                                        <img src="images/imgNews01.png" alt="">
+                                    </div>
+                                    <p class="date">
+                                        25 tháng 9, 2020
+                                    </p>
+                                    <h2>Bộ sưu tập mùa hè mới nhất cho bé</h2>
+                                    <p>Nếu bạn là tín đồ của decor trang trí nhà cửa hay muốn xây dựng cho bản thân một
+                                        nơi
+                                        an toàn mỗi khi trở về thì BEYOURs chính là sự lựa chọn hàng đầu dành cho...</p>
+                                </div>
+                            </div>
+                            <div class="items">
+                                <div class="itemNews">
+                                    <div class="imgNews">
+                                        <img src="images/imgNews02.png" alt="">
+                                    </div>
+                                    <p class="date">
+                                        25 tháng 9, 2020
+                                    </p>
+                                    <h2>Bộ sưu tập mùa hè mới nhất cho bé</h2>
+                                    <p>Nếu bạn là tín đồ của decor trang trí nhà cửa hay muốn xây dựng cho bản thân một
+                                        nơi
+                                        an toàn mỗi khi trở về thì BEYOURs chính là sự lựa chọn hàng đầu dành cho...</p>
+                                </div>
+                            </div>
+                            <div class="items">
+                                <div class="itemNews">
+                                    <div class="imgNews">
+                                        <img src="images/imgNews03.png" alt="">
+                                    </div>
+                                    <p class="date">
+                                        25 tháng 9, 2020
+                                    </p>
+                                    <h2>Bộ sưu tập mùa hè mới nhất cho bé</h2>
+                                    <p>Nếu bạn là tín đồ của decor trang trí nhà cửa hay muốn xây dựng cho bản thân một
+                                        nơi
+                                        an toàn mỗi khi trở về thì BEYOURs chính là sự lựa chọn hàng đầu dành cho...</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="arrow-prev">
+                        </div>
+                        <div class="arrow-next">
+                        </div>
+                    </div>
+                    <button class="btnXemThem">Xem Thêm</button>
+                </div>
+            </div>
+            <div class="commitment">
+                <div class="borderCommitment">
+                    <hr>
+                </div>
+                <div class="contentCommitment">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-4">
+                                <div class="itemCommitment">
+                                    <div class="boxIconCommitment">
+                                        <div class="imgIconCommitment">
+                                            <img src="images/iconchat.png" alt="">
+                                        </div>
+                                    </div>
+                                    <h3>Hỗ trợ khách hàng</h3>
+                                    <p>Hãy liên hệ với chúng tôi để được hỗ trợ 24/7</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4">
+                                <div class="itemCommitment">
+                                    <div class="boxIconCommitment">
+                                        <div class="imgIconCommitment">
+                                            <img src="images/iconcheck.png" alt="">
+                                        </div>
+                                    </div>
+                                    <h3>Chất lượng đảm bảo</h3>
+                                    <p>Bảo hành từ 12 đến 24 tháng</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4">
+                                <div class="itemCommitment">
+                                    <div class="boxIconCommitment">
+                                        <div class="imgIconCommitment">
+                                            <img src="images/icongiaohang.png" alt="">
+                                        </div>
+                                    </div>
+                                    <h3>Đổi trả dễ dàng</h3>
+                                    <p>Miễn phí đổi trả trong vòng 15 ngày</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="borderCommitment">
+                    <hr>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <div class="mainFooter">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-5 col-md-5 col-lg-3 ">
+                            <h3>Về chúng tôi</h3>
+                            <p>Giới thiệu về chúng tôi</p>
+                            <p>Tuyển dụng khối Văn phòng</p>
+                            <p>Tuyển dụng khối Siêu thị</p>
+                            <p>Chính sách bảo mật</p>
+                            <p>Điểu khoản sử dụng</p>
+                        </div>
+                        <div class="col-xs-12 col-sm-7 col-md-7 col-lg-3">
+                            <h3>Hỗ trợ khách hàng</h3>
+                            <p class="support pt-0">Hotline miễn phí</p>
+                            <p class="support">CSKH: 0934 08 44 26 (8h-22h)</p>
+                            <p class="support">Mua Hàng: 0934 08 44 26 (8h-22h)
+                                (Tất cả các ngày trong tuần)
+                            </p>
+                        </div>
+                        <div class="col-xs-12 col-sm-5 col-md-5 col-lg-3">
+                            <h3>Đơn vị vận chuyển</h3>
+                            <div class="imgTransport">
+                                <img src="images/imgAhaMove.png" alt="">
+                            </div>
+                            <div class="imgTransport">
+                                <img src="images/imgGrabExpress.png" alt="">
+                            </div>
+                            <div class="imgTransport">
+                                <img src="images/imgViettelPost.png" alt="">
+                            </div>
+                        </div>
+                        <div id="fb" class="col-xs-12 col-sm-7 col-md-7 col-lg-3">
+                            <div class="fb-page" data-href="https://www.facebook.com/facebook/" data-tabs="messages"
+                                data-width="300" data-height="350" data-small-header="false"
+                                data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                                <blockquote cite="https://www.facebook.com/facebook/" class="fb-xfbml-parse-ignore"><a
+                                        href="https://www.facebook.com/facebook/">Facebook</a></blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyRight">
+                    <div class="imgfooter">
+                        <img src="images/logofooter.png" alt="">
+                    </div>
+                    <p>OpTech Shop - Chuyên bán đồ dành cho trẻ em tại TP.HCM &nbsp; &nbsp; l &nbsp; &nbsp; Địa chỉ: 78
+                        Đặng
+                        Văn Bi, Bình
+                        Thọ, Thủ Đức, TP.HCM &nbsp; &nbsp; l &nbsp; &nbsp; Copyright © 2020. Thiết kể bởi OpTech </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- MMENU -->
+    <div class="container">
+        <nav id="my-menu">
+            <ul>
+                <li><a href="#">COMBO TRỌN GÓI KHI ĐI SINH</a></li>
+                <li><a href="#">COMBO CHO BÉ</a></li>
+                <li><a href="#">COMBO KHUYẾN MÃI</a></li>
+                <li><a href="#">BLOCK KIDYOURS</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- End MMENU -->
+
+    <!-- Back to top -->
+    <a href="#topscroll">
+        <div id="toTop" class="back-to-top"><i class="fas fa-angle-double-up"></i></div>
+    </a>
+    <!-- End Back to top -->
+
+    <!-- Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/5.3.4/js/jquery.mmenu.min.all.min.js'></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- End Script -->
+</body>
+
+</html>
