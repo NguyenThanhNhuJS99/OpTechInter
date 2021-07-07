@@ -1,0 +1,599 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+/*----------------------------USE SAME------------------------*/
+/*-------------------------END USE SAME------------------------*/
+/*---------------------------- General ------------------------*/
+.relative {
+    position: relative;
+}
+.absolute {
+    position: absolute;
+}
+
+.t-justify-content-flexend {
+    justify-content: flex-end;
+}
+
+.t-justify-content-space-between {
+    justify-content: space-between;
+}
+
+ul {
+    margin-bottom: 0px !important;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+*:focus {
+    outline: 0 !important;
+}
+
+.mr-top-90px {
+    margin-top: 90px;
+}
+
+.mr-top-60px {
+    margin-top: 60px;
+}
+
+.mr-top-40px {
+    margin-top: 40px;
+}
+
+.mr-top-45px {
+    margin-top: 45px;
+}
+
+.mr-top-50px {
+    margin-top: 50px;
+}
+
+.mr-top-60px {
+    margin-top: 60px;
+}
+
+.mr-top-30px {
+    margin-top: 30px;
+}
+
+.mr-top-20px {
+    margin-top: 20px;
+}
+
+.mr-top-40px {
+    margin-top: 40px;
+}
+
+.mr-bottom-30px {
+    margin-bottom: 30px;
+}
+
+.mr-bottom-20px {
+    margin-bottom: 20px;
+}
+
+.mr-tb-80px {
+    margin: 80px 0px;
+}
+.margin_lr_0px {
+    margin-left: 0px !important;
+    ;
+    margin-right: 0px !important;
+    ;
+}
+/*-----padding-----*/
+
+.pl-0 {
+    padding-left: 0 !important;
+}
+
+.padding_tb_40px {
+    padding: 40px 0px;
+}
+
+.padding_tb_20px {
+    padding: 20px 0px;
+}
+
+.padding_bottom_20px {
+    padding: 20px 0px;
+}
+
+
+/*---end padding----*/
+
+.clear {
+    clear: both;
+}
+
+.clear.height10 {
+    height: 10px;
+}
+
+.clear.height20 {
+    height: 20px;
+}
+
+.clear.height30 {
+    height: 30px;
+}
+
+.clear.height50 {
+    height: 50px;
+}
+
+.clear.border1 {
+    border-top: 1px solid #dedede;
+    margin: 15px 0px;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+.clearfix {
+    display: block;
+}
+
+a:hover {
+    text-decoration: none !important;
+}
+
+a:focus {
+    outline: none !important;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+html,
+body {
+    margin: 0px;
+    padding: 0px ;
+    font-family: Roboto;
+    font-size: 14px ;
+    font-weight: 400 ;
+    overflow-x: hidden;
+}
+
+button {
+    text-decoration: none;
+    outline: 0;
+}
+
+h2 {
+    margin-bottom: 0px;
+}
+
+ul,
+li {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.row_space_around {
+    justify-content: space-around;
+}
+
+
+/*======================== header ========================*/
+
+.bar_mobile {
+    display: none;
+}
+
+header {
+    padding: 20px 0px;
+    background: white;
+    filter: drop-shadow(2px 0px 8px black);
+    position: relative;
+    z-index: 100;
+    transition: 0.4s;
+}
+
+header .left_logo img {
+    width: 140px;
+}
+
+.sticky {
+    position: fixed;
+    padding: 10px 0px;
+    width: 100%;
+}
+
+.sticky .left_logo img {
+    width: 90px;
+    filter: drop-shadow(-1px -1px 1px black);
+}
+
+header .wrap_header {
+    background: white;
+}
+
+header .flex_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .right_menu > ul>li {
+    display: inline-table;
+}
+
+header .right_menu > ul>li:not(:last-child) {
+    margin-right: 40px;
+}
+
+header .right_menu ul>li a {
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    display: inline-block;
+}
+header .right_menu ul>li:hover > .dropdown_1
+{
+    opacity: 1;
+    visibility: visible;
+    top: 80px;
+} 
+header .right_menu ul>li a:hover {
+    color: #009345;
+}
+header .right_menu ul>li > .dropdown_1
+{
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    background: white;
+    width: 250px;
+    top: 140px;
+    transition: 0.4s;
+    filter: drop-shadow(0px 1px 2px rgba(0 0 0 / 60%));
+    border-radius: 5px;
+}
+header .right_menu ul>li > .dropdown_1 > ul.submenu_1 
+{
+    position: relative;
+    z-index: 20;
+}
+header .right_menu ul>li > .dropdown_1 > ul.submenu_1 > li
+{
+    width: 100%;
+}
+header .right_menu ul>li > .dropdown_1 > ul.submenu_1 > li:not(:last-child) > a,
+header .dropdown_2 > ul.submenu_2 li:not(:last-child) > a
+{
+     border-bottom: 1px solid #eee;
+}
+header .right_menu ul>li > .dropdown_1 > ul.submenu_1 > li a
+{
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+   
+}
+header .right_menu ul>li > .dropdown_1 > ul.submenu_1 > li:hover .dropdown_2
+{
+    left: 100%;
+    margin-left: 10px;
+    opacity: 1;
+    visibility: visible;
+}
+header .dropdown_2 
+{
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    z-index: 2;
+    background: white;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -100%;
+    transition: 0.4s;
+    filter: drop-shadow(0px 1px 2px rgba(0 0 0 / 60%));
+    border-radius: 5px;
+}
+
+/*========================end header ========================*/
+
+
+/*------------------------ menu mobi ------------------------*/
+
+.menuMobi {
+    background: transparent;
+    position: absolute;
+    z-index: 9999;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.menuMobi a:before,
+.menuMobi a:after,
+.menuMobi a span {
+    background: #333 !important;
+}
+
+.header a span {
+    margin: 5px 0 !important;
+}
+
+.menuMobi a:before,
+.menuMobi a:after {
+    height: 2px;
+    transition: 0.6s;
+}
+
+.menuMobi a span {
+    height: 2px;
+    width: 100%;
+    transition: 0.6s;
+}
+
+.menuMobi a:hover span {
+    width: 100%;
+    transition: 0.6s;
+}
+
+.mm-panel_has-navbar .mm-navbar {
+    background: #333;
+}
+
+.mm-navbar__title {
+    color: #fff !important;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.mm-listitem {
+    background: #fff;
+}
+
+.mm-listitem__text {
+    font-weight: 500;
+    color: #111;
+    text-transform: uppercase;
+}
+
+.mm-btn_prev:before {
+    border-color: #fff;
+}
+
+.mm-btn_next:after {
+    border-color: #888;
+}
+
+.mm-panel:not(.mm-hidden) {
+    background: #fff;
+}
+
+.mm-menu_offcanvas {
+    max-width: 300px !important;
+}
+
+.mm-wrapper_opening .mm-menu_offcanvas.mm-menu_opened~.mm-slideout {
+    transform: translate3d(300px, 0, 0) !important;
+}
+
+
+/*------------------------ End menu mobi ------------------------*/
+
+
+/*======================== End header ========================*/
+
+
+/*========================  footer =========================*/
+
+footer {
+    background: #f9f9f9;
+    padding: 40px 0px 0px 0px;
+}
+footer .footer_top
+{
+    padding-bottom: 40px;
+}
+footer .footer__content {
+    overflow: hidden;
+}
+
+footer .footer__content iframe {
+    width: 100% !important;
+    height: 250px !important;
+}
+
+footer .title_footer {
+    margin-bottom: 0;
+    font-size: 18px;
+    padding: 30px 0px;
+    color: #009345;
+}
+
+footer .footer__content .logo_footer img {
+    width: 180px;
+    filter: drop-shadow(-1px 3px 1px black);
+}
+
+footer .socials_footer {
+    display: flex;
+    align-items: center;
+}
+
+footer .socials_footer .title_social {
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+footer .socials_footer .icon__socials {
+    display: flex;
+    padding: 10px 0px;
+    align-items: center;
+}
+
+footer .socials_footer .icon__socials span {
+    cursor: pointer;
+    margin-right: 10px;
+    background: white;
+    color: #434343;
+    filter: drop-shadow(0px 0px 2px rgba(0 0 0 / 60%));
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .title_contact {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 77px;
+}
+
+.contact_info:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.contact_info .left_title_contact {
+    font-weight: bold;
+}
+
+.contact_info .detail_contact {}
+
+
+/*======================= end footer ========================*/
+
+
+/*========================slide form==========================*/
+
+
+/*======================end slide form==========================*/
+
+
+/*======================== End copyright ========================*/
+
+.copy_right {
+    background-color: #343434;
+    padding: 15px 0px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.copy_right span,
+.copy_right a {
+    font-weight: bold;
+    color: #737373;
+}
+
+.flex__copy_right {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*======================== copyright ========================*/
+
+
+/*======================== go to top ========================*/
+
+.go__top {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    padding: 1em 1.4em;
+    display: none;
+    opacity: 0.5;
+    z-index: 9999999;
+    background-color: #333;
+    border-radius: 5px;
+    border: 1px solid #f5f5f5;
+    border-radius: 100%;
+}
+
+.go__top i {
+    color: white;
+}
+
+.go__top:hover {
+    opacity: 1;
+    color: #fff;
+}
+
+
+/*======================== go to top End ========================*/
+
+
+/*======================== for resposive screen ========================*/
+@media screen and (max-width: 812px) {
+    footer {
+        margin-top: 30px !important;
+    }
+    header {
+        padding: 12px 0px;
+    }
+    .bar_mobile 
+    {
+        display: block;
+    }
+    .bar_mobile i
+    {
+        display: block;
+    font-size: 30px;
+    color: black;
+    filter: drop-shadow(0px 1px 1px black);
+    }
+    .right_menu ul
+    {
+        display: none;
+    }
+    header .left_logo img {
+        filter: drop-shadow(1px 2px 1px black);
+    }
+    header .left_logo img {
+        width: 117px;
+    }
+}
+@media screen and (max-width: 540px) {
+    .copy_right span, .copy_right a {
+        font-size: 10px;
+    }
+    footer .title_contact {
+        margin-bottom: 15px;
+    }
+    footer .footer__content .logo_footer img {
+        width: 160px;
+    }
+    footer .title_footer {
+        padding: 15px 0px;
+    }
+    .bar_mobile i {
+        font-size: 24px;
+    }
+    header .left_logo img {
+        width: 70px;
+    }
+}
+
+
+/*====================== for resposive screen end ======================*/

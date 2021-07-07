@@ -1,0 +1,44 @@
+nav:not(.mm-menu)
+{
+	display: none;
+}
+.header
+{
+	font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+	box-sizing: border-box;
+	height: 16px;
+}
+.header.fixed
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+.footer.fixed
+{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}
+.header a
+{
+    display: inline-block;
+    width: 25px;
+}
+.header a:before,
+.header a:after
+{
+	content: '';
+	display: block;
+	background: #ffffff;
+	height: 2px;
+}
+.header a span
+{
+	background: #ffffff;
+	display: block;
+	height: 2px;
+	margin: 6px 0;
+}
